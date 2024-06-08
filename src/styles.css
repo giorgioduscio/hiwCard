@@ -21,3 +21,41 @@ html, body{
     margin: 0;
     font-size: 2.5vh;
 }
+
+.card{
+    background: var(--c3);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px var(--c1);
+}
+.postHeader{
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+    .postHeader::after{
+        width: 100%;
+        height: 100%;
+        position: absolute; top: -30px;
+
+        box-shadow: 0 5px 20px 10px var(--c1);
+        content: '';
+        background: var(--c2);
+        transform: rotate(-2deg);
+    }
+
+h1{ font-size: 6vh; }
+h2{ font-size: 5vh; }
+h3{ font-size: 4vh; }
+
+button{
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: 0;
+}
+    button>img{
+        height: 30px;
+    }

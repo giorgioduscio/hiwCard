@@ -10,7 +10,12 @@ import { FieldsService } from '../../services/fields.service';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  showAside =true
+  showScore =true
+  styleButton ={
+    transform: this.showScore? `rotate(270deg)` :`rotate(180deg)`
+  }
+   
+
 
   constructor(private field: FieldsService){
     console.log(this.el);
