@@ -1,0 +1,49 @@
+.characterCard{
+    max-width: 1000px;
+}
+
+header{}
+    .generality{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .generality>*{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+article{
+    display: flex;
+    flex-wrap: wrap;
+}
+article>*{
+    width: 300px;
+}
+
+aside{ width: min-content; }
+    .scoreContainer{
+        display: flex;
+        gap: 30px;
+    }
+        .scoreContainer>*:first-child{
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+section{
+    min-width: 250px;
+}
+    .action{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    .action>*{ width: 50%; }

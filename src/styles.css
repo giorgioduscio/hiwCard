@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    /* Birch palette  */
+    --c5:#fff;
+    --c4:#889d2a;
+    --c3:#898766;
+    --c2:#363f12;
+    --c1:#222;
+    --st:#80808050;
+
+
+    background: var(--c1);
+    color: var(--c5);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 2.5vh;
+}

@@ -1,0 +1,77 @@
+<div class="characterCard">
+    <header>
+        <div class="generality">
+            <p>Nome: <strong>{{ el.name }}</strong></p>
+            <p>Morale: <strong>{{ el.moral }}</strong></p>
+            <p>Età: <strong>{{ el.age }} anni</strong></p>
+            <p>Altezza: <strong>{{ el.height }} metri</strong></p>
+            <p>Peso: <strong>{{ el.weight }} kg</strong></p>
+            <p>Capacità di trasporto: <strong>{{ el.transportCapacity() }} kg</strong></p>
+            <p>Bonus Competenza: <strong>{{ el.proficiencyBonus }}</strong></p>
+        </div>
+    </header>
+
+    <article>
+        <aside>
+            <button (click)="showAside =!showAside">{{ showAside? "Nascondi" :"Mostra" }}</button>
+        @if (showAside) {
+        @for (score of el.characterScores; track $index) {
+            <div class="scoreContainer">
+                <div>
+                    <p>{{ score.title }}</p>
+                    <div>{{ score.bonus }}</div>
+                </div>
+    
+                <ul>
+                    <li>Tiri salvezza: {{ score.proficiency }}</li>
+                @for (ability of score.abilities; track $index) {
+                    <li>{{ ability.title }}: {{ ability.proficiency }} </li>
+    
+                }
+                </ul>
+            </div>
+        } }
+            <div>
+                <h1>Competenze</h1>
+            </div>
+        </aside>
+
+        <section>
+            <div class="action">
+                <div>
+                    <p>Velocità</p> 
+                    <p>{{ el.speed }}m</p>
+                </div>
+                <div>
+                    <p>Classe armatura</p> 
+                    <p>{{ el.armorClass() }}</p>
+                </div>
+                <div>
+                    <p>Classe armatura</p> 
+                    <p>{{ el.armorClass() }}</p>
+                </div>
+                <div>
+                    <p>Punti ferita</p> 
+                    <p>{{ el.hitPoints }} PF</p>
+                </div>
+            </div>
+            
+            <div class="weapon">
+                <h1>Attacchi</h1>
+            </div>
+            <div class="equipment">
+                <h1>Equipaggiamento</h1>
+            </div>
+        </section>
+
+        <div>
+            <div class="mettle">
+                <h1>Carattere</h1>
+            </div>
+            <div class="privileges">
+                <h1>Privilegi</h1>
+            </div>
+        </div>
+    </article>
+
+</div>
