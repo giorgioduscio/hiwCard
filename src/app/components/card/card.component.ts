@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { FieldsService } from '../../services/fields.service';
+import { CardGeneralityComponent } from '../card-generality/card-generality.component';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [],
+  imports: [
+    CardGeneralityComponent,
+  ],
   providers:[ FieldsService],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
+
+
 export class CardComponent {
   showScore =true
   styleButton ={
@@ -16,13 +21,11 @@ export class CardComponent {
   }
    
 
-
   constructor(private field: FieldsService){
     console.log(this.el);
 
   }
   characters =this.field.getCharacters()
   el =this.characters[0]
-
   
 }

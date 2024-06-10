@@ -1,15 +1,8 @@
 <div class="characterCard">
     <h1>Scheda personaggio</h1>
     <header>
-        <div class="generality">
-            <p>Nome: <strong>{{ el.name }}</strong></p>
-            <p>Morale: <strong>{{ el.moral }}</strong></p>
-            <p>Età: <strong>{{ el.age }} anni</strong></p>
-            <p>Altezza: <strong>{{ el.height }} metri</strong></p>
-            <p>Peso: <strong>{{ el.weight }} kg</strong></p>
-            <p>Capacità di trasporto: <strong>{{ el.transportCapacity() }} kg</strong></p>
-            <p>Bonus Competenza: <strong>{{ el.proficiencyBonus }}</strong></p>
-        </div>
+        <!-- FIX -->
+        <app-card-generality [el]="el"></app-card-generality>
     </header>
     <div class="postHeader"></div>
 
@@ -56,6 +49,7 @@
         </aside>
 
         <section>
+            <!-- FIX -->
             <div class="action card">
                 <h3>Azione</h3>
                 
@@ -77,6 +71,7 @@
                 </div>
             </div>
             
+            <!-- FIX -->
             <div class="weapon card">
                 <h1>Attacchi</h1>
                 <ul>
@@ -84,19 +79,22 @@
                 </ul>
             </div>
 
+            <!-- FIX -->
             <div class="equipment card">
                 <h1>Equipaggiamento</h1>
-                    <ul>
-                        <li>item</li>
-                    </ul>
+                <ul>
+                    <li>item</li>
+                </ul>
             </div>
         </section>
 
         <div>
+            <!-- FIX -->
             <div class="mettle card">
                 <h1>Carattere</h1>
             </div>
 
+            <!-- FIX -->
             <div class="privileges card">
                 <h1>Privilegi</h1>
             </div>
