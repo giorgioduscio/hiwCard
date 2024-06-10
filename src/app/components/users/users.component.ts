@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FieldsService } from '../../services/fields.service';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
@@ -13,12 +13,13 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './users.component.css'
 })
 
-export class UsersComponent {
+export class UsersComponent implements OnInit{
   constructor(private field: FieldsService){
     console.log(this.characters);
   }
-  characters =this.field.getCharacters()
 
+  characters:any
+  ngOnInit(): void {
+    this.characters =this.field.getCharacters()
+  }
 }
-
-// <a [routerLink]="['path', ID]"></a>

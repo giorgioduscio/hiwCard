@@ -48,7 +48,6 @@ export class CardComponent implements OnInit, OnDestroy{
     this.el =this.characters[this.id]
   }
   ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
   }
 
 }

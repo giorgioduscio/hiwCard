@@ -1,0 +1,11 @@
+nav.navbar{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--c2);
+}
