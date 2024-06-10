@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FieldsService } from '../../services/fields.service';
 
 import { GeneralityComponent } from './generality/generality.component';
@@ -9,12 +9,14 @@ import { WeaponsComponent } from './weapons/weapons.component';
 import { EquipmentComponent } from './equipment/equipment.component';
 import { MettleComponent } from './mettle/mettle.component';
 import { PrivilegesComponent } from './privileges/privileges.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-card',
   standalone: true,
   imports: [
     GeneralityComponent,
+
     ScoreComponent,
     ProficiencyComponent,
 
@@ -31,17 +33,22 @@ import { PrivilegesComponent } from './privileges/privileges.component';
 })
 
 
-export class CardComponent {
-  showScore =true
-  styleButton ={
-    transform: this.showScore? `rotate(270deg)` :`rotate(180deg)`
-  }
-   
+export class CardComponent implements OnInit, OnDestroy{
+  id: number =0;
+  private sub: any;
+  el:any
 
-  constructor(private field: FieldsService){
-    console.log(this.el);
-  }
+  constructor(private route: ActivatedRoute, private field: FieldsService){  }
   characters =this.field.getCharacters()
-  el =this.characters[0]
-  
+
+  ngOnInit(): void {
+    this.sub =this.route.params.subscribe(params =>{
+      this.id = +params['ID'];
+    })
+    this.el =this.characters[this.id]
+  }
+  ngOnDestroy(): void {
+    throw new Error('Method not implemented.');
+  }
+
 }
