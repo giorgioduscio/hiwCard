@@ -23,7 +23,6 @@ export class CardComponent {
 
   constructor(private field: FieldsService){
     console.log(this.el);
-
   }
   characters =this.field.getCharacters()
   el =this.characters[0]

@@ -59,3 +59,7 @@ button{
     button>img{
         height: 30px;
     }
+a{
+    text-decoration: none;
+    color: var(--c4);
+}

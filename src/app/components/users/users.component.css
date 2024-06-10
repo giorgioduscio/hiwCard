@@ -1,0 +1,14 @@
+.users{
+    padding: 10px;    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+    .users>*{
+        padding: 10px;
+        min-height: 100px;
+        min-width: 100px;
+
+        background: var(--c2);
+        border-radius: 10px;
+    }
