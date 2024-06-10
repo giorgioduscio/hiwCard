@@ -1,26 +1,31 @@
 .characterCard{
-    max-width: 1000px;
-    box-shadow: 0 0 20px 10px var(--st);
+    /* max-width: 1000px; */
 }
-    .characterCard>h1{
-        padding: 20px;
-        text-align: center;
-        background: var(--c2);
-    }
 
     /* TODO HEADER */
 header{
+    min-height: 300px;
     padding: 10px;
-    background: var(--c2);
+    padding: 10px;
+    margin-bottom: 30px;
+
+
+    border-radius: 20px; 
 }
-    
-article{
+    header>h1{
+        padding: 20px 0 30px;
+        text-align: center;
+    }
+
+
+section{
+    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 10px;
 }
-    article>*{
+    section>*{
         width: 300px;
 
         display: flex;

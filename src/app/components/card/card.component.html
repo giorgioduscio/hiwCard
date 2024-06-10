@@ -1,33 +1,30 @@
 <div class="characterCard">
-    <h1>Scheda personaggio</h1>
     <header>
+        <h1>Scheda personaggio</h1>
         <app-generality [el]="el"></app-generality>
     </header>
-    <div class="postHeader"></div>
 
 
-    <article>
-        <aside>
+    <section>
+        <div class="column">
             <app-score [el]="el"></app-score>
             
             <app-proficiency [el]="el"></app-proficiency>
+        </div>
 
-        </aside>
-
-        <section>
+        <div class="column">
             <app-action [el]="el"></app-action>
             
             <app-weapons [el]="el"></app-weapons>
 
             <app-equipment [el]="el"></app-equipment>
+        </div>
 
-        </section>
-
-        <div>
+        <div class="column">
             <app-mettle [el]="el"></app-mettle>
             
             <app-privileges [el]="el"></app-privileges>
         </div>
-    </article>
+    </section>
 
 </div>
