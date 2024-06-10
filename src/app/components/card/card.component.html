@@ -29,7 +29,7 @@
                 @if (showScore) {
                 @for (score of el.characterScores; track $index) {
                 <div class="scoreContainer">
-                    <div class="card">
+                    <div>
                         <p>{{ score.title }}</p>
                         <h3>{{ score.bonus }}</h3>
                     </div>
@@ -57,32 +57,38 @@
 
         <section>
             <div class="action card">
-                Azione
+                <h3>Azione</h3>
+                
                 <div>
-                    <div>
-                        <p>Velocità</p> 
-                        <p>{{ el.speed }}m</p>
-                    </div>
-                    <div>
-                        <p>Classe armatura</p> 
-                        <p>{{ el.armorClass() }}</p>
-                    </div>
-                    <div>
-                        <p>Dado vita</p> 
-                        <p>d{{ el.lifeDice }}</p>
-                    </div>
-                    <div>
-                        <p>Punti ferita</p> 
-                        <p>{{ el.hitPoints }} PF</p>
-                    </div>
+                    <p>Velocità</p> 
+                    <p>{{ el.speed }}m</p>
+                </div>
+                <div>
+                    <p>Classe armatura</p> 
+                    <p>{{ el.armorClass() }}</p>
+                </div>
+                <div>
+                    <p>Dado vita</p> 
+                    <p>d{{ el.lifeDice }}</p>
+                </div>
+                <div>
+                    <p>Punti ferita</p> 
+                    <p>{{ el.hitPoints }} PF</p>
                 </div>
             </div>
             
             <div class="weapon card">
                 <h1>Attacchi</h1>
+                <ul>
+                    <li>item</li>
+                </ul>
             </div>
+
             <div class="equipment card">
                 <h1>Equipaggiamento</h1>
+                    <ul>
+                        <li>item</li>
+                    </ul>
             </div>
         </section>
 
@@ -90,6 +96,7 @@
             <div class="mettle card">
                 <h1>Carattere</h1>
             </div>
+
             <div class="privileges card">
                 <h1>Privilegi</h1>
             </div>

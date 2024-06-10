@@ -14,17 +14,24 @@ header{
     background: var(--c2);
 }
     .generality{
-        display: flex;
         gap: 20px;
+
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-    .generality>*{
-        width: 70px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+        .generality>*{
+            width: 80px;
+            padding: 5px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            text-align: center;
+            box-shadow: 0 0 10px 5px var(--st);
+        }
 
     
 article{
@@ -33,19 +40,18 @@ article{
     justify-content: space-evenly;
     gap: 10px;
 }
-article>*{
-    width: 300px;
-    padding: 10px;
+    article>*{
+        width: 300px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-}
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     /* TODO PUNTEGGI DI CARATTERISTICA */
 .score{
-    padding: 5px;
+    padding: 10px;
+
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -56,7 +62,7 @@ article>*{
         display: flex;
     }
     .scoreContainer{
-        padding-top: 5px;
+        padding-top: 10px;
         display: flex;
         gap: 30px;
         border-top: 1px solid var(--c2);
@@ -64,20 +70,39 @@ article>*{
         .scoreContainer>*:first-child{
             width: 80px;
             height: 80px;
-            padding: 10px 5px;
             overflow: hidden;
 
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
         }
 
     /* TODO ACTION */
-.action>div:first-child{
+.action{
+    padding: 60px 10px 10px;
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
     justify-content: center;
+    gap: 10px;
 }
-.action>*{ width: 40%; }
+    .action>h3{
+        padding-top: 10px;
+        width: 100%;
+        position: absolute; 
+        top: 0;
+        text-align: center;
+    }
+
+    .action>div{ 
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        border: 1px solid;
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
