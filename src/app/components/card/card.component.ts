@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FieldsService } from '../../services/fields.service';
 
-import { CardGeneralityComponent } from './card-generality/card-generality.component';
+import { GeneralityComponent } from './generality/generality.component';
 import { ScoreComponent } from './score/score.component';
 import { ProficiencyComponent } from './proficiency/proficiency.component';
 import { ActionComponent } from './action/action.component';
@@ -14,7 +14,7 @@ import { PrivilegesComponent } from './privileges/privileges.component';
   selector: 'app-card',
   standalone: true,
   imports: [
-    CardGeneralityComponent,
+    GeneralityComponent,
     ScoreComponent,
     ProficiencyComponent,
 
