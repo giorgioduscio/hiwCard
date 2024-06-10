@@ -10,7 +10,7 @@ export class FieldsService {
 
   characters =[
     {
-      // GENERALITà
+      // GENERALITA'
       id: 0,
       name: "Piercarlo",
       transportCapacity(){ 
@@ -101,7 +101,7 @@ export class FieldsService {
     },
     {
       // GENERALITà
-      id: 0,
+      id: 1,
       name: "Martina",
       transportCapacity(){ 
         //punteggio *7.5
@@ -191,7 +191,7 @@ export class FieldsService {
     },
     {
       // GENERALITà
-      id: 0,
+      id: 2,
       name: "Giggina",
       transportCapacity(){ 
         //punteggio *7.5

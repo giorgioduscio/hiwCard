@@ -1,7 +1,6 @@
 <div class="characterCard">
     <h1>Scheda personaggio</h1>
     <header>
-        <!-- FIX -->
         <app-card-generality [el]="el"></app-card-generality>
     </header>
     <div class="postHeader"></div>
@@ -9,95 +8,25 @@
 
     <article>
         <aside>
-            <!-- FIX -->
-            <div class="score card">
-                <button (click)="showScore =!showScore">
-                    <img 
-                        src="https://www.pngmart.com/files/16/Left-Arrow-Icon-Transparent-Background.png"
-                        [style]="styleButton"
-                    >
-                    Punteggi caratteristica
-                </button>
+            <app-score [el]="el"></app-score>
+            
+            <app-proficiency [el]="el"></app-proficiency>
 
-                @if (showScore) {
-                @for (score of el.characterScores; track $index) {
-                <div class="scoreContainer">
-                    <div>
-                        <p>{{ score.title }}</p>
-                        <h3>{{ score.bonus }}</h3>
-                    </div>
-        
-                    <ul>
-                        <li>Tiri salvezza: {{ score.proficiency }}</li>
-                    @for (ability of score.abilities; track $index) {
-                        <li>{{ ability.title }}: {{ ability.proficiency }} </li>
-                    }
-                    </ul>
-                </div>
-                } }
-            </div>
-
-            <!-- FIX -->
-            <div class="card">
-                <h1>Competenze</h1>
-                <p>Competenza</p>
-                <p>Competenza</p>
-                <p>Competenza</p>
-                <p>Competenza</p>
-                <p>Competenza</p>
-            </div>
         </aside>
 
         <section>
-            <!-- FIX -->
-            <div class="action card">
-                <h3>Azione</h3>
-                
-                <div>
-                    <p>Velocità</p> 
-                    <p>{{ el.speed }}m</p>
-                </div>
-                <div>
-                    <p>Classe armatura</p> 
-                    <p>{{ el.armorClass() }}</p>
-                </div>
-                <div>
-                    <p>Dado vita</p> 
-                    <p>d{{ el.lifeDice }}</p>
-                </div>
-                <div>
-                    <p>Punti ferita</p> 
-                    <p>{{ el.hitPoints }} PF</p>
-                </div>
-            </div>
+            <app-action [el]="el"></app-action>
             
-            <!-- FIX -->
-            <div class="weapon card">
-                <h1>Attacchi</h1>
-                <ul>
-                    <li>item</li>
-                </ul>
-            </div>
+            <app-weapons [el]="el"></app-weapons>
 
-            <!-- FIX -->
-            <div class="equipment card">
-                <h1>Equipaggiamento</h1>
-                <ul>
-                    <li>item</li>
-                </ul>
-            </div>
+            <app-equipment [el]="el"></app-equipment>
+
         </section>
 
         <div>
-            <!-- FIX -->
-            <div class="mettle card">
-                <h1>Carattere</h1>
-            </div>
-
-            <!-- FIX -->
-            <div class="privileges card">
-                <h1>Privilegi</h1>
-            </div>
+            <app-mettle [el]="el"></app-mettle>
+            
+            <app-privileges [el]="el"></app-privileges>
         </div>
     </article>
 

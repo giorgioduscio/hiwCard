@@ -1,0 +1,29 @@
+   /* TODO PUNTEGGI DI CARATTERISTICA */
+.score{
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 10px;
+}
+    .score>button:first-child{
+        display: flex;
+    }
+    .scoreContainer{
+        padding-top: 10px;
+        display: flex;
+        gap: 30px;
+        border-top: 1px solid var(--c2);
+    }
+        .scoreContainer>*:first-child{
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }

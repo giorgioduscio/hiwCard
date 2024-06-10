@@ -2,37 +2,17 @@
     max-width: 1000px;
     box-shadow: 0 0 20px 10px var(--st);
 }
-.characterCard>h1{
-    padding: 20px;
-    text-align: center;
-    background: var(--c2);
-}
+    .characterCard>h1{
+        padding: 20px;
+        text-align: center;
+        background: var(--c2);
+    }
 
     /* TODO HEADER */
 header{
     padding: 10px;
     background: var(--c2);
 }
-    .generality{
-        gap: 20px;
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-        .generality>*{
-            width: 80px;
-            padding: 5px;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-            text-align: center;
-            box-shadow: 0 0 10px 5px var(--st);
-        }
-
     
 article{
     display: flex;
@@ -48,61 +28,5 @@ article{
         gap: 20px;
     }
 
-    /* TODO PUNTEGGI DI CARATTERISTICA */
-.score{
-    padding: 10px;
+ 
 
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    gap: 10px;
-}
-    .score>button:first-child{
-        display: flex;
-    }
-    .scoreContainer{
-        padding-top: 10px;
-        display: flex;
-        gap: 30px;
-        border-top: 1px solid var(--c2);
-    }
-        .scoreContainer>*:first-child{
-            width: 80px;
-            height: 80px;
-            overflow: hidden;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-    /* TODO ACTION */
-.action{
-    padding: 60px 10px 10px;
-    position: relative;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-    .action>h3{
-        padding-top: 10px;
-        width: 100%;
-        position: absolute; 
-        top: 0;
-        text-align: center;
-    }
-
-    .action>div{ 
-        width: 40%;
-        padding: 10px;
-        display: flex;
-        border: 1px solid;
-        border-radius: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
