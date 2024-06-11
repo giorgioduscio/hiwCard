@@ -109,7 +109,7 @@ export class FieldsService {
 
       // PRIVILEGI
       privileges: [
-        "Atleta",
+        "Atleta", "Furtivo", "Ragnoide"
       ]
     },
   ]

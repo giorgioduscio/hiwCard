@@ -1,3 +1,8 @@
-<div class="privileges card">
-    <h1>Privilegi</h1>
+<div class="privilegesComponent">
+    <h3>Privilegi</h3>
+    <ul>
+    @for (privilege of el.privileges; track $index) {
+        <li>{{ privilege }}</li>
+    }
+    </ul>
 </div>
