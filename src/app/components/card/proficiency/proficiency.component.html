@@ -1,8 +1,8 @@
-<div class="proficiency">
-    <h1>Competenze</h1>
+<div class="proficiencyComponent">
+    <h3>Competenze</h3>
     <ul>
-        <li>Competenza</li>
-        <li>Competenza</li>
-        <li>Competenza</li>
+        @for (proficiency of el.proficiencys; track $index) {
+            <li>{{ proficiency }}</li>
+        }
     </ul>
 </div>

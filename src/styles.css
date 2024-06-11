@@ -63,3 +63,8 @@ a{
     text-decoration: none;
     color: var(--c4);
 }
+
+
+ul{
+    padding-left: 30px;
+}

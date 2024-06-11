@@ -1,9 +1,9 @@
-.proficiency{
+.proficiencyComponent{
     padding: 20px 5px;
 
     border: 1px solid;
     border-radius: 5px;
 }
-ul{
-    padding-left: 30px;
-}
+    .proficiencyComponent>h3{
+        text-align: center;
+    }
