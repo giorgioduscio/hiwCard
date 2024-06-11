@@ -1,6 +1,8 @@
-<div class="equipment card">
-    <h1>Equipaggiamento</h1>
+<div class="equipmentComponent">
+    <h3>Equipaggiamento</h3>
     <ul>
-        <li>item</li>
+    @for (equipment of el.equipment; track $index) {
+        <li>{{ equipment }}</li>
+    }
     </ul>
 </div>

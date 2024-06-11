@@ -98,8 +98,13 @@ export class FieldsService {
       lifeDice: 10,
       hitPoints: 30,
 
+      // ARMI E ATTACCHI
       weapons: ["Stocco", "Roncone", "Palla di fuoco"],
 
+      // EQUIPAGGIAMENTO
+      equipment:["Bastone", "Borsa da erborista", "Abito comune"],
+
+      
       privileges: [
         "Atleta",
       ]
