@@ -1,28 +1,26 @@
-    /* TODO ACTION */
-    .action{
-        padding: 60px 10px 10px;
-        position: relative;
-    
+.actionComponent>h3{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.actionComponent>.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+}
+    .flexbox>div{ 
+        width: 40%;
+        padding: 10px;
+
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        flex-direction: column;
+        align-items: stretch;
         justify-content: center;
-        gap: 10px;
+        
+        border: 1px solid;
+        border-radius: 10px;
+        text-align: center;
+
     }
-        .action>h3{
-            padding-top: 10px;
-            width: 100%;
-            position: absolute; 
-            top: 0;
-            text-align: center;
-        }
-    
-        .action>div{ 
-            width: 40%;
-            padding: 10px;
-            display: flex;
-            border: 1px solid;
-            border-radius: 10px;
-            flex-direction: column;
-            align-items: center;
-        }

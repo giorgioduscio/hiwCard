@@ -1,20 +1,22 @@
-<div class="action card">
+<div class="actionComponent">
     <h3>Azione</h3>
     
-    <div>
-        <p>Velocità</p> 
-        <p>{{ el.speed }}m</p>
-    </div>
-    <div>
-        <p>Classe armatura</p> 
-        <p>{{ el.armorClass() }}</p>
-    </div>
-    <div>
-        <p>Dado vita</p> 
-        <p>d{{ el.lifeDice }}</p>
-    </div>
-    <div>
-        <p>Punti ferita</p> 
-        <p>{{ el.hitPoints }} PF</p>
+    <div class="flexbox">
+        <div>
+            <p>Velocità</p> 
+            <p>{{ el.speed }}m</p>
+        </div>
+        <div>
+            <p>Classe armatura</p> 
+            <p>{{ el.armorClass() }}</p>
+        </div>
+        <div>
+            <p>Dado vita</p> 
+            <p>d{{ el.lifeDice }}</p>
+        </div>
+        <div>
+            <p>Punti ferita</p> 
+            <p>{{ el.hitPoints }} PF</p>
+        </div>
     </div>
 </div>
