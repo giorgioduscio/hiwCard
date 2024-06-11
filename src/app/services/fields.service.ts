@@ -65,7 +65,7 @@ export class FieldsService {
           ]
         },
         {
-          title: "Sagezza",
+          title: "Saggezza",
           bonus: 4,
           proficiency: true,
           abilities: [
@@ -155,7 +155,7 @@ export class FieldsService {
           ]
         },
         {
-          title: "Sagezza",
+          title: "Saggezza",
           bonus: 4,
           proficiency: true,
           abilities: [
@@ -245,7 +245,7 @@ export class FieldsService {
           ]
         },
         {
-          title: "Sagezza",
+          title: "Saggezza",
           bonus: 4,
           proficiency: true,
           abilities: [

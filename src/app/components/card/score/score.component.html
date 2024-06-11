@@ -1,28 +1,27 @@
-<div class="score">
-    <!-- 
-    <button (click)="showScore =!showScore">
-        <img 
+<div class="scoreComponent">
+    <button (click)="showScoreComponent =!showScoreComponent">
+        <!-- <img 
             src="https://www.pngmart.com/files/16/Left-Arrow-Icon-Transparent-Background.png"
-            [style]="styleButton"
-        >
+        > -->
         Punteggi caratteristica
     </button> 
-    @if (showScore) {}
-    -->
 
+    @if (showScoreComponent) {
     @for (score of el.characterScores; track $index) {
     <div class="scoreContainer">
-        <div>
+        <div class="scoreIndex">
             <p>{{ score.title }}</p>
             <h3>{{ score.bonus }}</h3>
         </div>
 
         <ul>
-            <li>Tiri salvezza: {{ score.proficiency }}</li>
+            <li><strong> Tiri salvezza: {{ score.proficiency? el.proficiencyBonus +score.bonus : score.bonus }}</strong></li>
         @for (ability of score.abilities; track $index) {
-            <li>{{ ability.title }}: {{ ability.proficiency }} </li>
+            <li>{{ ability.title }}: {{ ability.proficiency? el.proficiencyBonus +score.bonus : score.bonus }} </li>
         }
         </ul>
     </div>
     } 
+    }
+
 </div>
