@@ -98,6 +98,8 @@ export class FieldsService {
       lifeDice: 10,
       hitPoints: 30,
 
+      weapons: ["Stocco", "Roncone", "Palla di fuoco"],
+
       privileges: [
         "Atleta",
       ]

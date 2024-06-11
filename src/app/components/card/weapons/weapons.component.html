@@ -1,6 +1,8 @@
-<div class="weapon card">
-    <h1>Attacchi</h1>
+<div class="weaponComponent">
+    <h3>Attacchi</h3>
     <ul>
-        <li>item</li>
+    @for (weapon of el.weapons; track $index) {
+        <li>{{ weapon }}</li>
+    }
     </ul>
 </div>
