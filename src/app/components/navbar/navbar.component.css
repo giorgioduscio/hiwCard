@@ -1,7 +1,8 @@
 nav.navbar{
     height: 50px;
+    padding: 5px 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 }
 a{

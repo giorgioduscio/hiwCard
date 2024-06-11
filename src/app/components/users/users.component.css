@@ -1,12 +1,18 @@
+
 .users{
-    padding: 10px;    
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: flex-start;
 }
-    .users>*{
+aside{
+    min-width: 30vh;
+    padding: 10px;   
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    .users>aside>*{
         padding: 10px;
-        min-height: 100px;
         min-width: 100px;
 
         background: var(--c2);

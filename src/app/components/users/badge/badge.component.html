@@ -1,0 +1,13 @@
+<div class="badgeComponent">
+    <h3>{{ character.name }}</h3>
+
+    <ul>
+    @for (mettle of character.mettle; track $index) {
+        <li>{{ mettle }}</li>
+    }
+    </ul>
+
+    <a [routerLink]="['/card', character.id]">
+        Guarda scheda
+    </a>
+</div>
