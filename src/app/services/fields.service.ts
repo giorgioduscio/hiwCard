@@ -104,7 +104,10 @@ export class FieldsService {
       // EQUIPAGGIAMENTO
       equipment:["Bastone", "Borsa da erborista", "Abito comune"],
 
-      
+      // CARATTERE
+      mettle:["Estroverso", "Gentile", "Logorroico"],
+
+      // PRIVILEGI
       privileges: [
         "Atleta",
       ]

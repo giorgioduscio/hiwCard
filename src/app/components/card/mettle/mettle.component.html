@@ -1,3 +1,8 @@
-<div class="mettle card">
-    <h1>Carattere</h1>
+<div class="mettleComponent">
+    <h3>Carattere</h3>
+    <ul>
+    @for (mettle of el.mettle; track $index) {
+        <li>{{ mettle }}</li>
+    }
+    </ul>
 </div>
