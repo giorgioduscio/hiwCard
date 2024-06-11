@@ -1,5 +1,8 @@
 .characterCard{
-    /* max-width: 1000px; */
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 20px 5px black;
 }
 
     /* TODO HEADER */
