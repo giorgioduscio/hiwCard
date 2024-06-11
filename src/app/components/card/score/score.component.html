@@ -1,10 +1,10 @@
 <div class="scoreComponent">
-    <button (click)="showScoreComponent =!showScoreComponent">
+    <h3 (click)="showScoreComponent =!showScoreComponent">
         <!-- <img 
             src="https://www.pngmart.com/files/16/Left-Arrow-Icon-Transparent-Background.png"
         > -->
         Punteggi caratteristica
-    </button> 
+    </h3> 
 
     @if (showScoreComponent) {
     @for (score of el.characterScores; track $index) {
