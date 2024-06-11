@@ -1,13 +1,14 @@
 .characterCard{
     max-width: 1000px;
+    padding: 10px;
+    margin: 50px auto;
+    
     display: block;
-    margin: auto;
     box-shadow: 0 0 20px 5px black;
 }
 
     /* TODO HEADER */
 header{
-    padding: 10px;
     margin-bottom: 30px;
 
 

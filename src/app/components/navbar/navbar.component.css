@@ -1,12 +1,15 @@
 nav.navbar{
     height: 50px;
     padding: 5px 10px;
+    position: sticky; top: 0;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-a{
-    padding: 10px;
-    border-radius: 10px;
-    background: var(--c2);
-}
+    a{
+        padding: 10px;
+
+        border-radius: 10px;
+        background: var(--c2);
+    }
