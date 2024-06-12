@@ -1,0 +1,21 @@
+form{
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+
+    box-shadow: 0 0 20px 5px black;
+}
+form>.flexbox{
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+input, button{
+    padding: 10px 20px;
+    background: var(--c4) !important;
+    border-radius: 10px;
+}

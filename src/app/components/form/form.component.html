@@ -1,0 +1,14 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <h3>Accedi</h3>
+    <div class="flexbox">
+        <label for=""> 
+            Username
+            <input type="text" name="username" ngModel>
+        </label>
+        <label for="">
+            Email
+            <input type="email" name="email" ngModel required email>
+        </label>
+    </div>
+    <button type="submit" [disabled]="!form.valid">Invio</button>
+</form>

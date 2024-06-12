@@ -43,14 +43,18 @@ h2{ font-size: 5vh; }
 h3{ font-size: 4vh; }
 
 button{
-    padding: 0px;
+    padding: 10px;
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 10px;
+
     background: transparent;
     border: 0;
+    box-shadow: 0 5px 20px 5px black;
 }
+button:disabled{ background: var(--st); }
     button>img{
         height: 30px;
     }
