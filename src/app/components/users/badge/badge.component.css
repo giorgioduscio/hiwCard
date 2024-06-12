@@ -11,3 +11,14 @@
     border: 1px solid;
     border-radius: 10px;
 }
+    .badgeComponent .cut{
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+
+        background-position: top  center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        border-radius: 10px;
+    }

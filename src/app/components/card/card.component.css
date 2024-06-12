@@ -2,7 +2,7 @@
     max-width: 1000px;
     padding: 10px;
     margin: 50px auto;
-    
+
     display: block;
     box-shadow: 0 0 20px 5px black;
 }
@@ -21,7 +21,6 @@ header{
 
 
 section{
-    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

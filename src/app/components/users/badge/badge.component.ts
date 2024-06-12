@@ -14,6 +14,7 @@ import { FieldsService } from '../../../services/fields.service';
 export class BadgeComponent implements OnInit{
   id!: number;
   character:any
+  background: any;
 
   constructor(private route: ActivatedRoute, private field: FieldsService){}
 
@@ -23,7 +24,8 @@ export class BadgeComponent implements OnInit{
     this.route.paramMap.subscribe((p: ParamMap)=>{
       this.id = +p.get('id')!
       this.character =this.field.getCharacters()[this.id]
-      
+
+      this.background ={'backgroundImage': `url(${ this.character.imageURL })`}
     })
   }
 }

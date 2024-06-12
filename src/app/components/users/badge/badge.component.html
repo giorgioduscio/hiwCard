@@ -1,5 +1,6 @@
 <div class="badgeComponent">
     <h3>{{ character.name }}</h3>
+    <div class="cut" [style]="background"></div>
 
     <ul>
     @for (mettle of character.mettle; track $index) {
