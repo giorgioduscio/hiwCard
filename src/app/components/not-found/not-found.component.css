@@ -1,0 +1,11 @@
+.notFound{
+    min-width: 300px;
+    width: 30vw;
+    margin: auto;
+    padding: 30px;
+
+    text-align: center;
+    box-shadow: 0 0 20px 5px black;
+    background: var(--c2);
+    border-radius: 10px;
+}
