@@ -16,6 +16,5 @@ form>.flexbox{
 
 input, button{
     padding: 10px 20px;
-    background: var(--c4) !important;
     border-radius: 10px;
 }

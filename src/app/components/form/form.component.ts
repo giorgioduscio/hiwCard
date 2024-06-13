@@ -1,21 +1,40 @@
-import { Component, ViewChild, viewChild } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { Component, OnInit, ViewChild, viewChild } from '@angular/core';
+import { FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-form',
   standalone: true,
   imports: [
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule  
   ],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })
-export class FormComponent {
+export class FormComponent implements OnInit {
 
-  @ViewChild("form") form!: NgForm
-  onSubmit(form: NgForm){
-    console.log('form', this.form.value);
-    
+  formSwitch =false 
+
+  //OPTIMIZE TEMPLATE FORM
+  @ViewChild("templateForm") templateForm!: NgForm
+  templateSubmit(templateForm: NgForm){
+    console.log('templateForm', this.templateForm.value);
   }
 
+  // TODO REACTIVE FORM
+  reactiveForm!: FormGroup;
+  ngOnInit(): void {
+    this.reactiveForm =new FormGroup({
+      username: new FormControl('', Validators.required),
+      email: new FormControl('', 
+        [Validators.required, Validators.email]),
+
+    })
+  }
+
+  reactiveSubmit(){
+    console.log('reactiveForm', this.reactiveForm);
+    
+  }
 }

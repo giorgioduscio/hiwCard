@@ -20,6 +20,7 @@ html, body{
     padding: 0;
     margin: 0;
     font-size: 2vh;
+    outline: 0;
 }
 
 .postHeader{
@@ -42,6 +43,17 @@ h1{ font-size: 6vh; }
 h2{ font-size: 5vh; }
 h3{ font-size: 4vh; }
 
+input{
+    background: var(--c4);
+
+}
+input:invalid{
+    box-shadow: inset 0 0 20px 5px red;
+}
+input:valid{
+    
+}
+
 button{
     padding: 10px;
 
@@ -52,6 +64,7 @@ button{
 
     background: transparent;
     border: 0;
+    background: var(--c4);
     box-shadow: 0 5px 20px 5px black;
 }
 button:disabled{ background: var(--st); }

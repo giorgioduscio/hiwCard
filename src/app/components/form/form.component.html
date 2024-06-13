@@ -1,14 +1,40 @@
-<form #form="ngForm" (ngSubmit)="onSubmit(form)">
-    <h3>Accedi</h3>
-    <div class="flexbox">
-        <label for=""> 
-            Username
-            <input type="text" name="username" ngModel>
-        </label>
-        <label for="">
-            Email
-            <input type="email" name="email" ngModel required email>
-        </label>
-    </div>
-    <button type="submit" [disabled]="!form.valid">Invio</button>
-</form>
+<div>
+    <button (click)="formSwitch =!formSwitch">{{ 
+        formSwitch? "Reactive Form" :"Template Form" 
+    }}</button>
+
+
+    @if(formSwitch){
+    <form #templateForm="ngForm" (ngSubmit)="templateSubmit(templateForm)">
+        <h3>Template form</h3>
+        <div class="flexbox">
+            <label for=""> 
+                Username
+                <input type="text" name="username" ngModel>
+            </label>
+            <label for="">
+                Email
+                <input type="email" name="email" ngModel required email>
+            </label>
+        </div>
+        <button type="submit" [disabled]="!templateForm.valid">Invio</button>
+    </form>
+
+    } @else {
+    <form [formGroup]="reactiveForm" (ngSubmit)="reactiveSubmit()">
+        <h3>Reactive form</h3>
+        <div class="flexbox">
+            <label for=""> 
+                Username
+                <input type="text" name="username" formControlName="username">
+            </label>
+            <label for="">
+                Email
+                <input type="email" name="email" formControlName="email">
+            </label>
+        </div>
+        <button type="submit" [disabled]="!reactiveForm.valid">Invio</button>
+    </form>
+    }
+
+</div>
