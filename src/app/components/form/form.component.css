@@ -8,10 +8,11 @@ form{
 form>.flexbox{
     padding: 10px;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    align-items: center;
+    justify-items: stretch;
+    grid-template-columns: 1fr 3fr;
     gap: 10px;
-
 }
 
 input, button{

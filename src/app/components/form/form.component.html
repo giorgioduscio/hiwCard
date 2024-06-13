@@ -4,35 +4,34 @@
     }}</button>
 
 
+    <!-- OPTIMIZE TEMPLATE FORM -->
     @if(formSwitch){
     <form #templateForm="ngForm" (ngSubmit)="templateSubmit(templateForm)">
         <h3>Template form</h3>
+
         <div class="flexbox">
-            <label for=""> 
-                Username
-                <input type="text" name="username" ngModel>
-            </label>
-            <label for="">
-                Email
-                <input type="email" name="email" ngModel required email>
-            </label>
+            <label for=""> Username </label>
+            <input type="text" name="username" ngModel>
+            <label for=""> Email </label>
+            <input type="email" name="email" ngModel required email>
         </div>
+        
         <button type="submit" [disabled]="!templateForm.valid">Invio</button>
     </form>
 
+
+    <!-- TODO REACTIVE FORM -->
     } @else {
     <form [formGroup]="reactiveForm" (ngSubmit)="reactiveSubmit()">
         <h3>Reactive form</h3>
+
         <div class="flexbox">
-            <label for=""> 
-                Username
-                <input type="text" name="username" formControlName="username">
-            </label>
-            <label for="">
-                Email
-                <input type="email" name="email" formControlName="email">
-            </label>
+            <label for=""> Username </label>
+            <input type="text" name="username" formControlName="username">
+            <label for=""> Email </label>
+            <input type="email" name="email" formControlName="email">
         </div>
+
         <button type="submit" [disabled]="!reactiveForm.valid">Invio</button>
     </form>
     }
