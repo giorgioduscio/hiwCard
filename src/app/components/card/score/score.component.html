@@ -11,13 +11,23 @@
     <div class="scoreContainer">
         <div class="scoreIndex">
             <p>{{ score.title }}</p>
-            <h3>{{ score.bonus }}</h3>
+            <h3>{{ score.bonus>=0? "+":"" }}{{ score.bonus }}</h3>
         </div>
 
         <ul>
-            <li><strong> Tiri salvezza: {{ score.proficiency? el.proficiencyBonus +score.bonus : score.bonus }}</strong></li>
+            <!-- MOSTRA '+' SE IL BONUS NON E' NEGATIVO O NE HA COMPETENZA -->
+            <li><strong> 
+                Tiri salvezza: 
+                {{ score.bonus>=0 || score.proficiency? "+":"" }}
+                {{ score.proficiency? el.proficiencyBonus +score.bonus : score.bonus }}
+            </strong></li>
+
         @for (ability of score.abilities; track $index) {
-            <li>{{ ability.title }}: {{ ability.proficiency? el.proficiencyBonus +score.bonus : score.bonus }} </li>
+            <li>
+                {{ ability.title }}: 
+                {{ score.bonus>=0 || ability.proficiency? "+":"" }}
+                {{ ability.proficiency? el.proficiencyBonus +score.bonus : score.bonus }} 
+            </li>
         }
         </ul>
     </div>

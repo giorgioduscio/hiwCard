@@ -1,28 +1,22 @@
    /* TODO PUNTEGGI DI CARATTERISTICA */
 .scoreComponent{
-    padding: 10px;
-
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
-    gap: 10px;
 }
 
     .scoreComponent>button{
         color: var(--c5);
     }
 
-    .scoreContainer:nth-child(2){ border: 0; }
     .scoreContainer{
-        padding-top: 10px;
+        margin: 10px;
         display: flex;
-        border-top: 1px solid;
     }
         .scoreIndex{
             width: 80px;
             height: 80px;
-            padding: 5px;
 
             display: flex;
             flex-direction: column;
