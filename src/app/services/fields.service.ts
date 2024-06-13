@@ -9,18 +9,18 @@ export class FieldsService {
   getCharacters(){ return this.characters }
 
   characters =[
-    // UGUE
-    {
+    
+    {//TODO OOGWAY
       // GENERALITA'
       id: 0,
-      name: "Maestro Ugue",
-      imageURL: "https://i.pinimg.com/736x/c0/7d/ae/c07dae84043f8f3528089322f3e75b06.jpg",
+      name: "Maestro Oogway",
+      imageURL: "https://www.vibrazionipositive.com/imgb/478/maestro-oogway-insegna.webp",
       transportCapacity(){ 
         //punteggio *7.5
         let result =((this.characterScores[0].bonus *2) +10) *7.5
         return result
       }, 
-      moral: "Neutrale",
+      moral: "Collettivista Buono",
       age: 100,
       height: 1,
       weight: 50,
@@ -31,9 +31,9 @@ export class FieldsService {
         {
           title: "Forza",
           bonus: -1,
-          proficiency: true,
+          proficiency: false,
           abilities: [
-            {title: "Atletica", proficiency: true},
+            {title: "Atletica", proficiency: false},
           ]
         },
         {
@@ -41,7 +41,7 @@ export class FieldsService {
           bonus: 1,
           proficiency: false,
           abilities: [
-            {title: "Acrobazia", proficiency: true},
+            {title: "Acrobazia", proficiency: false},
             {title: "Furtività", proficiency: false},
             {title: "Manualità", proficiency: true},
           ]
@@ -49,9 +49,9 @@ export class FieldsService {
         {
           title: "Costituzione",
           bonus: 0,
-          proficiency: true,
+          proficiency: false,
           abilities: [
-            // {title: "Acrobazia", proficiency: true},
+            // {title: "Acrobazia", proficiency: false},
           ]
         },
         {
@@ -59,11 +59,11 @@ export class FieldsService {
           bonus: 2,
           proficiency: false,
           abilities: [
-            {title: "Arcano", proficiency: true},
+            {title: "Arcano", proficiency: false},
             {title: "Natura", proficiency: false},
-            {title: "Storia", proficiency: true},
+            {title: "Storia", proficiency: false},
             {title: "Investigare", proficiency: false},
-            {title: "Religione", proficiency: true},
+            {title: "Religione", proficiency: false},
           ]
         },
         {
@@ -71,19 +71,19 @@ export class FieldsService {
           bonus: 3,
           proficiency: true,
           abilities: [
-            {title: "Interazione animale", proficiency: true},
+            {title: "Interazione animale", proficiency: false},
             {title: "Intuizione", proficiency: false},
-            {title: "percezione", proficiency: true},
-            {title: "Medicina", proficiency: false},
-            {title: "Sopravvivenza", proficiency: true},
+            {title: "Percezione", proficiency: true},
+            {title: "Medicina", proficiency: true},
+            {title: "Sopravvivenza", proficiency: false},
           ]
         },
         {
           title: "Carisma",
           bonus: 2,
-          proficiency: false,
+          proficiency: true,
           abilities: [
-            {title: "Intimidire", proficiency: true},
+            {title: "Intimidire", proficiency: false},
             {title: "Intrattenere", proficiency: false},
             {title: "Persuasione", proficiency: true},
             {title: "Inganno", proficiency: false},
@@ -92,7 +92,7 @@ export class FieldsService {
       ],
 
       // COMPETENZE
-      proficiencys:["Armi da guerra", "Armature leggere", "Carro da traino"],
+      proficiencys:["Armi semplici", "Carro da traino"],
 
       // AZIONE
       speed: 5,
@@ -101,22 +101,20 @@ export class FieldsService {
       hitPoints: 30,
 
       // ARMI E ATTACCHI
-      weapons: ["Stocco", "Roncone", "Palla di fuoco"],
+      weapons: ["Bastone", "Tempesta di petali"],
 
       // EQUIPAGGIAMENTO
       equipment:["Bastone", "Borsa da erborista", "Abito comune"],
 
       // CARATTERE
-      mettle:["Estroverso", "Gentile", "Logorroico"],
+      mettle:["Introverso", "Gentile", "Saggio"],
 
       // PRIVILEGI
-      privileges: [
-        "Atleta", "Furtivo", "Ragnoide"
-      ]
+      privileges: [ "Osservatore", "Incantesimi" ]
     },
 
-    // JACK SPARROW
-    {
+    
+    {//todo JACK SPARROW
       // GENERALITA'
       id: 1,
       name: "Jack Sparrow",
@@ -126,7 +124,7 @@ export class FieldsService {
         let result =((this.characterScores[0].bonus *2) +10) *7.5
         return result
       }, 
-      moral: "Neutrale",
+      moral: "Individualista Neutrale",
       age: 23,
       height: 1.80,
       weight: 70,
@@ -136,63 +134,63 @@ export class FieldsService {
       characterScores:[
         {
           title: "Forza",
-          bonus: 2,
-          proficiency: true,
+          bonus: 0,
+          proficiency: false,
           abilities: [
-            {title: "Atletica", proficiency: true},
+            {title: "Atletica", proficiency: false},
           ]
         },
         {
           title: "Destrezza",
           bonus: 3,
-          proficiency: false,
+          proficiency: true,
           abilities: [
             {title: "Acrobazia", proficiency: true},
-            {title: "Furtività", proficiency: false},
-            {title: "Manualità", proficiency: true},
+            {title: "Furtività", proficiency: true},
+            {title: "Manualità", proficiency: false},
           ]
         },
         {
           title: "Costituzione",
-          bonus: 1,
+          bonus: 2,
           proficiency: true,
           abilities: [
-            // {title: "Acrobazia", proficiency: true},
+            // {title: "Acrobazia", proficiency: false},
           ]
         },
         {
           title: "Intelligenza",
-          bonus: 0,
+          bonus: -1,
           proficiency: false,
           abilities: [
-            {title: "Arcano", proficiency: true},
+            {title: "Arcano", proficiency: false},
             {title: "Natura", proficiency: false},
-            {title: "Storia", proficiency: true},
+            {title: "Storia", proficiency: false},
             {title: "Investigare", proficiency: false},
-            {title: "Religione", proficiency: true},
+            {title: "Religione", proficiency: false},
           ]
         },
         {
           title: "Saggezza",
-          bonus: 2,
-          proficiency: true,
+          bonus: 1,
+          proficiency: false,
           abilities: [
-            {title: "Interazione animale", proficiency: true},
+            {title: "Interazione animale", proficiency: false},
             {title: "Intuizione", proficiency: false},
-            {title: "percezione", proficiency: true},
+            {title: "Percezione", proficiency: false},
             {title: "Medicina", proficiency: false},
-            {title: "Sopravvivenza", proficiency: true},
+            {title: "Sopravvivenza", proficiency: false},
           ]
         },
         {
           title: "Carisma",
-          bonus: -1,
+          bonus: 2,
           proficiency: false,
           abilities: [
-            {title: "Intimidire", proficiency: true},
+            {title: "Intimidire", proficiency: false},
             {title: "Intrattenere", proficiency: false},
             {title: "Persuasione", proficiency: true},
-            {title: "Inganno", proficiency: false},
+            {title: "Inganno", proficiency: true},
           ]
         },
       ],
@@ -213,7 +211,7 @@ export class FieldsService {
       equipment:["Bastone", "Borsa da erborista", "Abito comune"],
 
       // CARATTERE
-      mettle:["Estroverso", "Gentile", "Logorroico"],
+      mettle:["Estroverso", "Egocentrico", "Logorroico"],
 
       // PRIVILEGI
       privileges: [
@@ -221,8 +219,8 @@ export class FieldsService {
       ]
     },
 
-    // GANDALF
-    {
+    
+    {//todo GANDALF
       // GENERALITA'
       id: 2,
       name: "Gandalf il barbaro",
@@ -255,7 +253,7 @@ export class FieldsService {
           abilities: [
             {title: "Acrobazia", proficiency: true},
             {title: "Furtività", proficiency: false},
-            {title: "Manualità", proficiency: true},
+            {title: "Manualità", proficiency: false},
           ]
         },
         {
@@ -263,7 +261,7 @@ export class FieldsService {
           bonus: 2,
           proficiency: true,
           abilities: [
-            // {title: "Acrobazia", proficiency: true},
+            // {title: "Acrobazia", proficiency: false},
           ]
         },
         {
@@ -271,33 +269,33 @@ export class FieldsService {
           bonus: -1,
           proficiency: false,
           abilities: [
-            {title: "Arcano", proficiency: true},
+            {title: "Arcano", proficiency: false},
             {title: "Natura", proficiency: false},
-            {title: "Storia", proficiency: true},
+            {title: "Storia", proficiency: false},
             {title: "Investigare", proficiency: false},
-            {title: "Religione", proficiency: true},
+            {title: "Religione", proficiency: false},
           ]
         },
         {
           title: "Saggezza",
-          bonus: 0,
-          proficiency: true,
+          bonus: 1,
+          proficiency: false,
           abilities: [
-            {title: "Interazione animale", proficiency: true},
-            {title: "Intuizione", proficiency: false},
-            {title: "percezione", proficiency: true},
+            {title: "Interazione animale", proficiency: false},
+            {title: "Intuizione", proficiency: true},
+            {title: "Percezione", proficiency: false},
             {title: "Medicina", proficiency: false},
             {title: "Sopravvivenza", proficiency: true},
           ]
         },
         {
           title: "Carisma",
-          bonus: 1,
+          bonus: 0,
           proficiency: false,
           abilities: [
-            {title: "Intimidire", proficiency: true},
+            {title: "Intimidire", proficiency: false},
             {title: "Intrattenere", proficiency: false},
-            {title: "Persuasione", proficiency: true},
+            {title: "Persuasione", proficiency: false},
             {title: "Inganno", proficiency: false},
           ]
         },
