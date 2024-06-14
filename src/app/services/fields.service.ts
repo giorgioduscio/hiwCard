@@ -114,7 +114,7 @@ export class FieldsService {
     },
 
     
-    {//todo JACK SPARROW
+    {//TODO JACK SPARROW
       // GENERALITA'
       id: 1,
       name: "Jack Sparrow",
@@ -220,7 +220,7 @@ export class FieldsService {
     },
 
     
-    {//todo GANDALF
+    {//TODO GANDALF
       // GENERALITA'
       id: 2,
       name: "Gandalf il barbaro",
@@ -317,11 +317,11 @@ export class FieldsService {
       equipment:["Bastone", "Borsa da erborista", "Abito comune"],
 
       // CARATTERE
-      mettle:["Estroverso", "Gentile", "Logorroico"],
+      mettle:["Autorevole", "Gentile", "Saccente"],
 
       // PRIVILEGI
       privileges: [
-        "Atleta", "Furtivo", "Ragnoide"
+        "Pugile", "Lottatore da taverna"
       ]
     },
   ]

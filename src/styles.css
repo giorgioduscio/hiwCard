@@ -19,7 +19,8 @@ html, body{
 *{
     padding: 0;
     margin: 0;
-    font-size: 2vh;
+    font-size: 2.2vh;
+    font-family: cursive;
     outline: 0;
 }
 
