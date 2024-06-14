@@ -28,6 +28,10 @@ export class SeverService {
     return this.http.get<Shop[]>(this.url+"/"+city);
   }
 
+  addShop(shop: Shop){
+    
+  }
+
   updateSearchTerm(term: string) {
     this.searchSubject.next(term);
   }

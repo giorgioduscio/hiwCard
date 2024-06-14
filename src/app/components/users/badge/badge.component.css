@@ -1,18 +1,12 @@
 .badgeComponent{
     padding: 10px;
-    min-height: 200px;
-    min-width: 30vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
     
     border-radius: 10px;
 }
     .badgeComponent .cut{
-        height: 300px;
-        width: 400px;
+        margin: 10px 0;
+        min-height: 250px;
+        min-width: 250px; max-height: 100%;
         overflow: hidden;
 
         background-position: top  center;
