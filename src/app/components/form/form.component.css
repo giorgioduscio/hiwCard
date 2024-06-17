@@ -1,6 +1,6 @@
 form{
     width: 500px;
-    margin: auto;
+    margin:0 auto 50px;
     padding: 30px;
 
     box-shadow: 0 0 20px 5px black;
@@ -21,4 +21,21 @@ input, button{
 }
 button.switch{
     margin: 20px auto;
+}
+
+
+
+.database{
+    width: min-content;
+    margin: 0 auto 50px;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 black;
+}
+table input{
+    border-collapse: collapse;
+    border-radius: 0;
+}
+table button{
+    border-radius: 0;
+    box-shadow: none;
 }
