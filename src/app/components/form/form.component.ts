@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
-import { FirebaseService } from '../../services/firebase.service';
 import { HttpClientModule } from '@angular/common/http';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { FirebaseService } from '../../services/firebase.service';
+
+import { FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -9,9 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     FormsModule,
     ReactiveFormsModule,
-
-    HttpClientModule,
   ],
+  
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })
@@ -38,7 +38,7 @@ export class FormComponent implements OnInit {
         [ Validators.required, Validators.email ]
       ),
     })
-
+/* 
     // GET
     this.firebase.getUser().subscribe((data:any)=>{ 
       this.getData =Object.keys(data).map(key=> {
@@ -47,6 +47,7 @@ export class FormComponent implements OnInit {
       console.log('fromDatabase', data) 
       console.log('converter', this.getData) 
     })
+*/
   }
   
   // ADD
@@ -59,7 +60,8 @@ export class FormComponent implements OnInit {
     })
     .subscribe(data=>{ console.log(data) })
   }
-
+  
+/*
   // DELETE
   clickDelete(id:any){
     this.firebase.deleteUser(id)
@@ -71,4 +73,5 @@ export class FormComponent implements OnInit {
     this.firebase.patchUser(id, {email: "programmaDelC@zzo.com"})
     .subscribe(data=>{ console.log(data) })
   }
+*/
 }
