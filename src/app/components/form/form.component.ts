@@ -20,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 export class FormComponent implements OnInit {
   constructor(private firebase: FirebaseService){}
   formSwitch =false 
+  getData: any
 
   //OPTIMIZE TEMPLATE FORM
   @ViewChild("templateForm") templateForm!: NgForm
@@ -37,15 +38,37 @@ export class FormComponent implements OnInit {
         [ Validators.required, Validators.email ]
       ),
     })
+
+    // GET
+    this.firebase.getUser().subscribe((data:any)=>{ 
+      this.getData =Object.keys(data).map(key=> {
+        return data[key]['id'] =key
+      })
+      console.log('fromDatabase', data) 
+      console.log('converter', this.getData) 
+    })
   }
   
+  // ADD
   reactiveSubmit(){
     console.log('reactiveForm', this.reactiveForm);
 
-    this.firebase.add({ 
+    this.firebase.addUser({ 
       username: this.reactiveForm.value.username, 
       email: this.reactiveForm.value.email 
     })
-    .subscribe(data=>{ console.log(data); })
+    .subscribe(data=>{ console.log(data) })
+  }
+
+  // DELETE
+  clickDelete(id:any){
+    this.firebase.deleteUser(id)
+    .subscribe(data=>{ console.log(data) })
+  }
+
+  // PATCH
+  clickPatch(id:any){
+    this.firebase.patchUser(id, {email: "programmaDelC@zzo.com"})
+    .subscribe(data=>{ console.log(data) })
   }
 }
