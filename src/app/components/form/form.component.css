@@ -35,7 +35,15 @@ table input{
     border-collapse: collapse;
     border-radius: 0;
 }
+input:focus{
+    background: var(--c3);
+}
+
 table button{
+    padding: 10px;
     border-radius: 0;
     box-shadow: none;
+}
+table button:active{
+    background: var(--c3);
 }
