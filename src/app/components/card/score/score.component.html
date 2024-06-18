@@ -2,13 +2,20 @@
     <h4 class="title" (click)="showScoreComponent =!showScoreComponent">
         Punteggi caratteristica
     </h4> 
-
+    
     @if (showScoreComponent) {
+    <div class="proficiencyBonus">
+        <span>Bonus competenza: <strong>+{{el.proficiencyBonus}}</strong></span>
+    </div>
+
     @for (score of el.characterScores; track $index) {
     <div class="scoreContainer">
         <div class="scoreIndex">
             <p>{{ score.title }}</p>
-            <h3>{{ score.bonus>=0? "+":"" }}{{ score.bonus }}</h3>
+            <span>
+                <!-- {{ score.bonus>=0? "+":"" }} -->
+                <input name="" [value]="score.bonus">
+            </span>
         </div>
 
         <table> 
@@ -16,7 +23,7 @@
         <!-- MOSTRA '+' SE IL BONUS NON E' NEGATIVO O NE HA COMPETENZA -->
         @for (ability of score.abilities; track $index) {
             <tr>
-                <td>{{ ability.proficiency? "⬤":"𐩒" }}</td>
+                <td><input type="checkbox" [checked]="ability.proficiency"></td>
                 <td>{{
                      score.bonus>=0 || ability.proficiency? "+":"" 
                     }}{{

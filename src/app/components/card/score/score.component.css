@@ -5,28 +5,53 @@
     align-items: stretch;
     justify-content: flex-start;
 }
-
     .scoreComponent>button{
         color: var(--c5);
     }
 
-    .scoreContainer{
-        margin: 10px;
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
+    /* todo */
+.proficiencyBonus{
+    margin: 20px auto;
+    width: 200px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 20px 0 black;
+}
+    .proficiencyBonus strong{
+        font-size: 3vh;
     }
-        .scoreIndex{
-            width: 80px;
-            height: 80px;
 
-            text-align: center;
+    /* todo */
+.scoreContainer{
+    margin: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+    .scoreIndex{
+        width: 60px;
+        height: 60px;
+
+        text-align: center;
+    }
+    .scoreIndex>p{
+        overflow-x: hidden;
         }
-        .scoreIndex>p{
-            overflow-x: hidden;
+    .scoreIndex input{
+        width: 30px;
+
+        background: transparent;
+        color: var(--c5);
+        border: 0;
+        text-align: center;
+        font-size: 3vh;
+        font-weight: bold;
         }
 
-        tr td:nth-child(2){
-            padding-left: 3px;
-            padding-right: 10px;
-        }
+    tr td:nth-child(2){
+        padding-left: 3px;
+        padding-right: 10px;
+    }
