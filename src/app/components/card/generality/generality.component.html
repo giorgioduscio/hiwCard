@@ -1,33 +1,14 @@
 
 <div class="generalityComponent">
-    <div class="name">
-        <textarea cols="20" rows="1">{{ el.name }}</textarea>
-        <p>Nome</p> 
+    @for (generality of el.generality; track $index) {
+    <div>
+        <span>{{ generality.value }}</span>
+        <p>{{ generality.placeholder }}</p>
     </div>
-    <div class="generality">
-        <div>
-            <textarea rows="1">{{ el.moral }}</textarea>
-            <p>Morale</p> 
-        </div>
-        <div>
-            <textarea rows="1">{{ el.age }}</textarea>
-            <span>anni</span>
-            <p>Età</p> 
-        </div>
-        <div>
-            <textarea rows="1">{{ el.height }}</textarea>
-            <span>metri</span>
-            <p>Altezza</p> 
-        </div>
-        <div>
-            <textarea rows="1">{{ el.weight }}</textarea>
-            <span>kg</span>
-            <p>Peso</p> 
-        </div>
-        <div>
-            <span>{{ el.transportCapacity() }}kg</span>
-            <p>Capacità di trasporto</p> 
-        </div>
+}
+    <div>
+        <span>{{ el.transportCapacity() }}kg</span>
+        <p>Capacità di trasporto</p>
     </div>
 </div>
 

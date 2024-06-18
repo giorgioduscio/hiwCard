@@ -3,36 +3,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
 }
-    .name{
-        width: 300px;
-    }
-    textarea{
-        padding: 1px 2px;
-        
-        background: var(--c3);
-        font-weight: bold;
-        border:0;
-    }
-    p{
-        padding: 0px 0px;
-        border-top: 1px solid var(--c1);
-    }
-
-    .generality{
-        min-width: 300px;
-        max-width: 600px;
-        
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .generality>div, .name{
-        padding: 5px;
-        min-width: 20%;
-
-        background: var(--c4);
-        color: var(--c1);
-        border-radius: 10px;
-    }

@@ -1,4 +1,4 @@
-import { Component, Input, input } from '@angular/core';
+import { Component, Input, OnInit, input } from '@angular/core';
 
 @Component({
   selector: 'app-generality',
@@ -7,8 +7,10 @@ import { Component, Input, input } from '@angular/core';
   templateUrl: './generality.component.html',
   styleUrl: './generality.component.css'
 })
-export class GeneralityComponent {
+export class GeneralityComponent implements OnInit {
   @Input() el:any  
-
   
+  ngOnInit(): void {
+    console.log("data", this.el.generality[0].placeholder);
+  }
 }

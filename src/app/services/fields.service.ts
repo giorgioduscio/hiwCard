@@ -13,17 +13,20 @@ export class FieldsService {
     {//TODO OOGWAY
       // GENERALITA'
       id: 0,
-      name: "Maestro Oogway",
+      generality: [
+        {placeholder: "Nome", value: "Maestro Oogway"},
+        {placeholder: "Livello", value: 3},
+        {placeholder: "Morale", value: "Collettivista Buono"},
+        {placeholder: "Age", value: 100},
+        {placeholder: "Altezza", value: 1},
+        {placeholder: "Peso", value: 50},
+      ],
       imageURL: "https://www.vibrazionipositive.com/imgb/478/maestro-oogway-insegna.webp",
       transportCapacity(){ 
         //punteggio *7.5
         let result =((this.characterScores[0].bonus *2) +10) *7.5
         return result
       }, 
-      moral: "Collettivista Buono",
-      age: 100,
-      height: 1,
-      weight: 50,
       
       // PUNTEGGI CARATTERISTICA
       proficiencyBonus: 2,
@@ -115,6 +118,7 @@ export class FieldsService {
       // GENERALITA'
       id: 1,
       name: "Jack Sparrow",
+      level: 3,
       imageURL: "https://i.pinimg.com/736x/5a/06/89/5a068970bd13910105e3a0150e11e668.jpg",
       transportCapacity(){ 
         //punteggio *7.5
@@ -221,6 +225,7 @@ export class FieldsService {
       // GENERALITA'
       id: 2,
       name: "Gandalf il barbaro",
+      level: 3,
       imageURL: "https://i.etsystatic.com/42140335/r/il/f82c05/4744018168/il_fullxfull.4744018168_659d.jpg",
       transportCapacity(){ 
         //punteggio *7.5
