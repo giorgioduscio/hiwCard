@@ -1,8 +1,5 @@
 <article class="scoreComponent">
     <h4 class="title" (click)="showScoreComponent =!showScoreComponent">
-        <!-- <img 
-            src="https://www.pngmart.com/files/16/Left-Arrow-Icon-Transparent-Background.png"
-        > -->
         Punteggi caratteristica
     </h4> 
 
@@ -14,22 +11,24 @@
             <h3>{{ score.bonus>=0? "+":"" }}{{ score.bonus }}</h3>
         </div>
 
-        <ul>
-            <!-- MOSTRA '+' SE IL BONUS NON E' NEGATIVO O NE HA COMPETENZA -->
-            <li><strong> 
-                Tiri salvezza: 
-                {{ score.bonus>=0 || score.proficiency? "+":"" }}
-                {{ score.proficiency? el.proficiencyBonus +score.bonus : score.bonus }}
-            </strong></li>
-
+        <table> 
+        <tbody>
+        <!-- MOSTRA '+' SE IL BONUS NON E' NEGATIVO O NE HA COMPETENZA -->
         @for (ability of score.abilities; track $index) {
-            <li>
-                {{ ability.title }}: 
-                {{ score.bonus>=0 || ability.proficiency? "+":"" }}
-                {{ ability.proficiency? el.proficiencyBonus +score.bonus : score.bonus }} 
-            </li>
+            <tr>
+                <td>{{ ability.proficiency? "⬤":"𐩒" }}</td>
+                <td>{{
+                     score.bonus>=0 || ability.proficiency? "+":"" 
+                    }}{{
+                     ability.proficiency? el.proficiencyBonus +score.bonus : score.bonus 
+                }}</td>
+                <td>{{ ability.title }}</td>
+                
+                
+            </tr>
         }
-        </ul>
+        </tbody>
+        </table>
     </div>
     } 
     }

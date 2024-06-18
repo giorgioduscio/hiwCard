@@ -31,7 +31,6 @@ export class FieldsService {
         {
           title: "Forza",
           bonus: -1,
-          proficiency: false,
           abilities: [
             {title: "Atletica", proficiency: false},
           ]
@@ -39,7 +38,6 @@ export class FieldsService {
         {
           title: "Destrezza",
           bonus: 1,
-          proficiency: false,
           abilities: [
             {title: "Acrobazia", proficiency: false},
             {title: "Furtività", proficiency: false},
@@ -49,15 +47,14 @@ export class FieldsService {
         {
           title: "Costituzione",
           bonus: 0,
-          proficiency: false,
           abilities: [
-            // {title: "Acrobazia", proficiency: false},
+            {title: "Resilienza", proficiency: false},
           ]
         },
         {
           title: "Intelligenza",
           bonus: 2,
-          proficiency: false,
+          
           abilities: [
             {title: "Arcano", proficiency: false},
             {title: "Natura", proficiency: false},
@@ -69,7 +66,7 @@ export class FieldsService {
         {
           title: "Saggezza",
           bonus: 3,
-          proficiency: true,
+          
           abilities: [
             {title: "Interazione animale", proficiency: false},
             {title: "Intuizione", proficiency: false},
@@ -81,7 +78,7 @@ export class FieldsService {
         {
           title: "Carisma",
           bonus: 2,
-          proficiency: true,
+          
           abilities: [
             {title: "Intimidire", proficiency: false},
             {title: "Intrattenere", proficiency: false},
@@ -135,7 +132,7 @@ export class FieldsService {
         {
           title: "Forza",
           bonus: 0,
-          proficiency: false,
+          
           abilities: [
             {title: "Atletica", proficiency: false},
           ]
@@ -143,7 +140,7 @@ export class FieldsService {
         {
           title: "Destrezza",
           bonus: 3,
-          proficiency: true,
+          
           abilities: [
             {title: "Acrobazia", proficiency: true},
             {title: "Furtività", proficiency: true},
@@ -153,15 +150,15 @@ export class FieldsService {
         {
           title: "Costituzione",
           bonus: 2,
-          proficiency: true,
+          
           abilities: [
-            // {title: "Acrobazia", proficiency: false},
+            {title: "Resilienza", proficiency: false},
           ]
         },
         {
           title: "Intelligenza",
           bonus: -1,
-          proficiency: false,
+          
           abilities: [
             {title: "Arcano", proficiency: false},
             {title: "Natura", proficiency: false},
@@ -173,7 +170,7 @@ export class FieldsService {
         {
           title: "Saggezza",
           bonus: 1,
-          proficiency: false,
+          
           abilities: [
             {title: "Interazione animale", proficiency: false},
             {title: "Intuizione", proficiency: false},
@@ -185,7 +182,7 @@ export class FieldsService {
         {
           title: "Carisma",
           bonus: 2,
-          proficiency: false,
+          
           abilities: [
             {title: "Intimidire", proficiency: false},
             {title: "Intrattenere", proficiency: false},
@@ -241,7 +238,7 @@ export class FieldsService {
         {
           title: "Forza",
           bonus: 3,
-          proficiency: true,
+          
           abilities: [
             {title: "Atletica", proficiency: true},
           ]
@@ -249,7 +246,7 @@ export class FieldsService {
         {
           title: "Destrezza",
           bonus: 2,
-          proficiency: false,
+          
           abilities: [
             {title: "Acrobazia", proficiency: true},
             {title: "Furtività", proficiency: false},
@@ -259,15 +256,15 @@ export class FieldsService {
         {
           title: "Costituzione",
           bonus: 2,
-          proficiency: true,
+          
           abilities: [
-            // {title: "Acrobazia", proficiency: false},
+            {title: "Resilienza", proficiency: false},
           ]
         },
         {
           title: "Intelligenza",
           bonus: -1,
-          proficiency: false,
+          
           abilities: [
             {title: "Arcano", proficiency: false},
             {title: "Natura", proficiency: false},
@@ -279,7 +276,7 @@ export class FieldsService {
         {
           title: "Saggezza",
           bonus: 1,
-          proficiency: false,
+          
           abilities: [
             {title: "Interazione animale", proficiency: false},
             {title: "Intuizione", proficiency: true},
@@ -291,7 +288,7 @@ export class FieldsService {
         {
           title: "Carisma",
           bonus: 0,
-          proficiency: false,
+          
           abilities: [
             {title: "Intimidire", proficiency: false},
             {title: "Intrattenere", proficiency: false},

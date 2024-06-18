@@ -13,19 +13,20 @@
     .scoreContainer{
         margin: 10px;
         display: flex;
+        align-items: flex-start;
+        gap: 10px;
     }
         .scoreIndex{
             width: 80px;
             height: 80px;
 
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            justify-content: center;
-
             text-align: center;
         }
-
         .scoreIndex>p{
-            overflow: hidden;
+            overflow-x: hidden;
+        }
+
+        tr td:nth-child(2){
+            padding-left: 3px;
+            padding-right: 10px;
         }
