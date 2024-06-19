@@ -6,7 +6,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FormComponent } from './components/form/form.component';
 
 export const routes: Routes =[
-    {path: "", redirectTo: "users", pathMatch: 'full'},
+    {path: "", redirectTo: "users/0", pathMatch: 'full'},
     {path: "card/:ID", component: CardComponent},
     {path: "users", component: UsersComponent, children:[
         {path:":id", component: BadgeComponent},

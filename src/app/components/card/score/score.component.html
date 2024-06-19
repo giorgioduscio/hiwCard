@@ -1,39 +1,41 @@
 <div class="scoreComponent">
 
-    <div class="scoreContainer">
-        <div class="scoreIndex">
+    <div class="proficiencyBonus">
+        <div class="bonus">
             +{{characterElem.proficiencyBonus}}
         </div>
-        Bonus competenza
-    </div>
-
-    @for (score of characterElem.characterScores; track score; let  a = $index) {
-    <div class="scoreContainer">
-        <div class="scoreIndex">
-            <p>{{ score.title }}</p>
-            <span>
-                <input name="" [value]="score.bonus">
-            </span>
+        <div class="title">
+            Bonus competenza
         </div>
-
-        
-        <table> 
-        <tbody>@for (ability of score.abilities; track ability; let b =$index) {
-            <tr>
-                <td>
-                    <input 
-                    type="checkbox" 
-                    (click)="setCheck($event, a, b)" 
-                    [checked]="ability.proficiency"
-                    >
-                </td>
-                <td>{{ abilityBonus(ability.proficiency, score.bonus) }}</td>
-                <td>{{ ability.title }}</td>
-            </tr>
-        }</tbody>
-        </table>
     </div>
-    } 
+
+    <div class="gridbox">
+        @for (score of characterElem.characterScores; track score; let  a = $index) {
+        <div class="scoreContainer">
+            <div class="scoreIndex">
+                <p>{{ score.title }}</p>
+                <input name="" [value]="score.bonus">
+            </div>
+    
+            
+            <table> 
+            <tbody>@for (ability of score.abilities; track ability; let b =$index) {
+                <tr>
+                    <td>
+                        <input 
+                        type="checkbox" 
+                        (click)="setCheck($event, a, b)" 
+                        [checked]="ability.proficiency"
+                        >
+                    </td>
+                    <td>{{ abilityBonus(ability.proficiency, score.bonus) }}</td>
+                    <td>{{ ability.title }}</td>
+                </tr>
+            }</tbody>
+            </table>
+        </div>
+        } 
+    </div>
     
 
 </div>

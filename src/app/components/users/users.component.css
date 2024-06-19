@@ -2,23 +2,28 @@
 .users{
     padding: 10px;
 }
-summary{
-    padding: 5px 10px;
-    font-size: 3vh;
-    background: var(--c3);
-}
-aside{
-    min-width: 30vh;
-    padding: 10px;   
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-    .users>aside>*{
-        padding: 10px;
-        min-width: 100px;
-
+    details{
+        overflow: hidden;
         background: var(--c2);
         border-radius: 10px;
     }
+        summary{
+            padding: 5px 10px;
+            font-size: 3vh;
+            background: var(--c3);
+        }
+        aside{
+            min-width: 30vh;
+            padding: 10px;   
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+            .users>aside>*{
+                padding: 10px;
+                min-width: 100px;
+
+                background: var(--c2);
+                border-radius: 10px;
+            }

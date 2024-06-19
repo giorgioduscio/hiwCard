@@ -1,55 +1,60 @@
    /* TODO PUNTEGGI DI CARATTERISTICA */
 .scoreComponent{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
 }
-    .scoreComponent>button{
-        color: var(--c5);
-    }
 
     /* TODO BONUS COMPETENZA */
 .proficiencyBonus{
-    padding: 5px;
-
+    width: max-content;
+    
+    overflow: hidden;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5px;
+    
+    background: var(--c3);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 black;
 }
-    .proficiencyBonus strong{
+    .proficiencyBonus .bonus{
+        padding: 5px 10px;
+
+        background: var(--c4);
         font-size: 3vh;
+        border-radius: 10px;
+    }
+    .proficiencyBonus .title{
+        padding: 0 5px;
     }
 
-    /* todo */
-.scoreContainer{
-    padding: 10px;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
 
-    border-bottom: 1px solid var(--c1);
+.gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+.scoreContainer{
+    padding: 5px;
 }
     .scoreIndex{
-        width: 60px;
+        padding: 5px;
+        margin: auto;
+        width: 50%;
 
+        background: var(--c4);
+        border-radius: 10px;
         text-align: center;
     }
-    .scoreIndex>p{
-        overflow-x: hidden;
-    }
-    .scoreIndex input{
-        width: 100%;
-
-        background: transparent;
-        color: var(--c5);
-        border: 0;
-        text-align: center;
-        font-size: 3vh;
-        font-weight: bold;
-    }
-
-    tr td:nth-child(2){
-        padding-left: 3px;
-        padding-right: 10px;
+        .scoreIndex p{
+            overflow: hidden;
+        }
+        .scoreIndex input{
+            width: 100%;
+            text-align: center;
+            border: 0;
+            font-weight: bold;
+        }
+    td{
+        padding: 0 2px;
     }
