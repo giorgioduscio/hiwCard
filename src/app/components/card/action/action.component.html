@@ -4,19 +4,32 @@
     <div class="flexbox">
         <div>
             <p>Velocità</p> 
-            <strong>{{ el.speed }}m</strong>
+            <strong><input type="text" [value]="el.speed">m</strong>
         </div>
         <div>
             <p>Classe armatura</p> 
-            <strong>{{ el.armorClass() }} 🛡</strong>
+            <select name="ca" id="ca" [value]="selectValue" (change)="selectChange($event)">
+                <option value="less">Senza armatura</option>
+                <option value="monk">Monaco</option>
+                <option value="barbarian">Barbaro</option>
+                <option value="light">Armatura imbottita</option>
+                <option value="inter">Cotta di maglia</option>
+                <option value="heavy">Armatura di piastre</option>
+            </select>
+            <strong>{{ outputCA }} 🛡</strong>
         </div>
         <div>
             <p>Dado vita</p> 
-            <strong>d{{ el.lifeDice }}</strong>
+            <strong>
+                <input type="text" [value]="el.generality[1].field"
+                >d<input type="text" [value]="el.lifeDice">
+            </strong>
         </div>
         <div>
             <p>Punti ferita</p> 
-            <strong>{{ el.hitPoints }} PF</strong>
+            <strong>
+                <input type="text" [value]="hp">/{{ hp }} PF
+            </strong>
         </div>
     </div>
 </article>

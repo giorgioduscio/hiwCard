@@ -96,9 +96,9 @@ export class FieldsService {
 
       // AZIONE
       speed: 5,
-      armorClass(){ return 10 +this.characterScores[1].bonus },
-      lifeDice: 10,
-      hitPoints: 30,
+      armorClass: "monk",
+      lifeDice: 6,
+      
 
       // ARMI E ATTACCHI
       weapons: ["Bastone", "Tempesta di petali"],
@@ -203,9 +203,9 @@ export class FieldsService {
 
       // AZIONE
       speed: 5,
-      armorClass(){ return 10 +this.characterScores[1].bonus },
-      lifeDice: 10,
-      hitPoints: 30,
+      armorClass: "light",
+      lifeDice: 8,
+      
 
       // ARMI E ATTACCHI
       weapons: ["Stocco", "Roncone", "Palla di fuoco"],
@@ -312,9 +312,9 @@ export class FieldsService {
 
       // AZIONE
       speed: 5,
-      armorClass(){ return 10 +this.characterScores[1].bonus },
-      lifeDice: 10,
-      hitPoints: 30,
+      armorClass: "barbarian",
+      lifeDice: 12,
+      
 
       // ARMI E ATTACCHI
       weapons: ["Stocco", "Roncone", "Palla di fuoco"],
