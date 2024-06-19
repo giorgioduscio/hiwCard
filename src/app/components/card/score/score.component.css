@@ -9,16 +9,13 @@
         color: var(--c5);
     }
 
-    /* todo */
+    /* TODO BONUS COMPETENZA */
 .proficiencyBonus{
-    margin: 20px auto;
-    width: 200px;
     padding: 5px;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    box-shadow: 0 0 20px 0 black;
 }
     .proficiencyBonus strong{
         font-size: 3vh;
@@ -39,9 +36,9 @@
     }
     .scoreIndex>p{
         overflow-x: hidden;
-        }
+    }
     .scoreIndex input{
-        width: 30px;
+        width: 100%;
 
         background: transparent;
         color: var(--c5);
@@ -49,7 +46,7 @@
         text-align: center;
         font-size: 3vh;
         font-weight: bold;
-        }
+    }
 
     tr td:nth-child(2){
         padding-left: 3px;

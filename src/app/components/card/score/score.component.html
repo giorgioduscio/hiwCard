@@ -4,37 +4,37 @@
     </h4> 
     
     @if (showScoreComponent) {
-    <div class="proficiencyBonus">
-        <span>Bonus competenza: <strong>+{{el.proficiencyBonus}}</strong></span>
+    <div class="scoreContainer">
+        <div class="scoreIndex">
+            +{{el.proficiencyBonus}}
+        </div>
+        Bonus competenza
     </div>
 
-    @for (score of el.characterScores; track $index) {
+    @for (score of el.characterScores; track score; let  a = $index) {
     <div class="scoreContainer">
         <div class="scoreIndex">
             <p>{{ score.title }}</p>
             <span>
-                <!-- {{ score.bonus>=0? "+":"" }} -->
                 <input name="" [value]="score.bonus">
             </span>
         </div>
 
+        
         <table> 
-        <tbody>
-        <!-- MOSTRA '+' SE IL BONUS NON E' NEGATIVO O NE HA COMPETENZA -->
-        @for (ability of score.abilities; track $index) {
+        <tbody>@for (ability of score.abilities; track ability; let b =$index) {
             <tr>
-                <td><input type="checkbox" [checked]="ability.proficiency"></td>
-                <td>{{
-                     score.bonus>=0 || ability.proficiency? "+":"" 
-                    }}{{
-                     ability.proficiency? el.proficiencyBonus +score.bonus : score.bonus 
-                }}</td>
+                <td>
+                    <input 
+                    type="checkbox" 
+                    (click)="setCheck($event, a, b)" 
+                    [checked]="ability.proficiency"
+                    >
+                </td>
+                <td>{{ abilityBonus(ability.proficiency, score.bonus) }}</td>
                 <td>{{ ability.title }}</td>
-                
-                
             </tr>
-        }
-        </tbody>
+        }</tbody>
         </table>
     </div>
     } 
