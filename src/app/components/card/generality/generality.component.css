@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .generalityComponent{
     gap: 10px;
     display: flex;
@@ -5,3 +9,21 @@
     justify-content: center;
     align-items: flex-start;
 }
+    .generalityComponent>div{
+        min-width: 100px;
+        max-width: 200px;
+        padding: 5px;
+        background: var(--c4);
+        border-radius: 10px;
+    }
+        p{
+            border-bottom: 1px solid;
+        }
+        textarea{
+            width: 100%;
+            resize: none;
+
+            border: 0;
+            color: var(--c5);
+            font-size: 2.8vh;
+        }

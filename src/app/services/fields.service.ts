@@ -14,12 +14,12 @@ export class FieldsService {
       // GENERALITA'
       id: 0,
       generality: [
-        {placeholder: "Nome", value: "Maestro Oogway"},
-        {placeholder: "Livello", value: 3},
-        {placeholder: "Morale", value: "Collettivista Buono"},
-        {placeholder: "Age", value: 100},
-        {placeholder: "Altezza", value: 1},
-        {placeholder: "Peso", value: 50},
+        {title: "Nome", field: "Maestro Oogway"},
+        {title: "Livello", field: 3},
+        {title: "Morale", field: "Collettivista Buono"},
+        {title: "Età", field: 100},
+        {title: "Altezza", field: 1},
+        {title: "Peso", field: 50},
       ],
       imageURL: "https://www.vibrazionipositive.com/imgb/478/maestro-oogway-insegna.webp",
       transportCapacity(){ 
@@ -117,18 +117,20 @@ export class FieldsService {
     {//TODO JACK SPARROW
       // GENERALITA'
       id: 1,
-      name: "Jack Sparrow",
-      level: 3,
+      generality: [
+        {title: "Nome", field: "Jack Sparrow"},
+        {title: "Livello", field: 3},
+        {title: "Morale", field: "Individualista Neutrale"},
+        {title: "Età", field: 23},
+        {title: "Altezza", field: 1.80},
+        {title: "Peso", field: 70},
+      ],
       imageURL: "https://i.pinimg.com/736x/5a/06/89/5a068970bd13910105e3a0150e11e668.jpg",
       transportCapacity(){ 
         //punteggio *7.5
         let result =((this.characterScores[0].bonus *2) +10) *7.5
         return result
       }, 
-      moral: "Individualista Neutrale",
-      age: 23,
-      height: 1.80,
-      weight: 70,
       
       // PUNTEGGI CARATTERISTICA
       proficiencyBonus: 2,
@@ -224,18 +226,20 @@ export class FieldsService {
     {//TODO GANDALF
       // GENERALITA'
       id: 2,
-      name: "Gandalf il barbaro",
-      level: 3,
+      generality: [
+        {title: "Nome", field: "Gandalf il barbaro"},
+        {title: "Livello", field: 3},
+        {title: "Morale", field: "Buono"},
+        {title: "Età", field: 81},
+        {title: "Altezza", field: 2.1},
+        {title: "Peso", field: 90},
+      ],
       imageURL: "https://i.etsystatic.com/42140335/r/il/f82c05/4744018168/il_fullxfull.4744018168_659d.jpg",
       transportCapacity(){ 
         //punteggio *7.5
         let result =((this.characterScores[0].bonus *2) +10) *7.5
         return result
       }, 
-      moral: "Buono",
-      age: 23,
-      height: 1.96,
-      weight: 90,
       
       // PUNTEGGI CARATTERISTICA
       proficiencyBonus: 2,

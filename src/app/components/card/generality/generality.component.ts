@@ -11,6 +11,6 @@ export class GeneralityComponent implements OnInit {
   @Input() el:any  
   
   ngOnInit(): void {
-    console.log("data", this.el.generality[0].placeholder);
+    console.log("data", this.el.generality);
   }
 }

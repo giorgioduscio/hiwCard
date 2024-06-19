@@ -15,11 +15,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 
 export class UsersComponent implements OnInit{
   constructor(private field: FieldsService){
-    console.log(this.characters);
   }
 
   characters:any
   ngOnInit(): void {
     this.characters =this.field.getCharacters()
+    console.log(this.characters[0].generality[0].field);
   }
 }

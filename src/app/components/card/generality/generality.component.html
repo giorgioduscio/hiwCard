@@ -2,13 +2,13 @@
 <div class="generalityComponent">
     @for (generality of el.generality; track $index) {
     <div>
-        <span>{{ generality.value }}</span>
-        <p>{{ generality.placeholder }}</p>
+        <p>{{ generality.title }}</p>
+        <textarea>{{ generality.field }}</textarea>
     </div>
 }
     <div>
-        <span>{{ el.transportCapacity() }}kg</span>
         <p>Capacità di trasporto</p>
+        <span>{{ el.transportCapacity() }}kg</span>
     </div>
 </div>
 
