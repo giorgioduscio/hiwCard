@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './mettle.component.css'
 })
 export class MettleComponent {
-  @Input() el:any
+  @Input() characterElem:any
 }

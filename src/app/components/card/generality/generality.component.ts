@@ -8,9 +8,9 @@ import { Component, Input, OnInit, input } from '@angular/core';
   styleUrl: './generality.component.css'
 })
 export class GeneralityComponent implements OnInit {
-  @Input() el:any  
+  @Input() characterElem:any  
   
   ngOnInit(): void {
-    console.log("data", this.el.generality);
+    console.log("data", this.characterElem.generality);
   }
 }

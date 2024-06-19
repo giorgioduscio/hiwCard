@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './weapons.component.css'
 })
 export class WeaponsComponent {
-  @Input() el:any
+  @Input() characterElem:any
 }

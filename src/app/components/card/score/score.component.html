@@ -2,12 +2,12 @@
 
     <div class="scoreContainer">
         <div class="scoreIndex">
-            +{{el.proficiencyBonus}}
+            +{{characterElem.proficiencyBonus}}
         </div>
         Bonus competenza
     </div>
 
-    @for (score of el.characterScores; track score; let  a = $index) {
+    @for (score of characterElem.characterScores; track score; let  a = $index) {
     <div class="scoreContainer">
         <div class="scoreIndex">
             <p>{{ score.title }}</p>

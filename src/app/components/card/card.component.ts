@@ -36,7 +36,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CardComponent implements OnInit{
   id: number =0;
   private sub: any;
-  el:any
+  characterElem:any
 
   constructor(private route: ActivatedRoute, private field: FieldsService){  }
   characters =this.field.getCharacters()
@@ -45,6 +45,6 @@ export class CardComponent implements OnInit{
     this.sub =this.route.params.subscribe(params =>{
       this.id = +params['ID'];
     })
-    this.el =this.characters[this.id]
+    this.characterElem =this.characters[this.id]
   }
 }

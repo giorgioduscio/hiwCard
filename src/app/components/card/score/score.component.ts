@@ -8,10 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrl: './score.component.css'
 })
 export class ScoreComponent {
-  @Input() el:any
+  @Input() characterElem:any
   // CHECK ABILITAà IN TEMPO REALE
   setCheck(e:any, scoreIndex:number, abilityIndex:number){
-    this.el.characterScores[scoreIndex].abilities[abilityIndex].proficiency 
+    this.characterElem.characterScores[scoreIndex].abilities[abilityIndex].proficiency 
     =e.target.checked
   }
 
@@ -20,7 +20,7 @@ export class ScoreComponent {
     let result
     // SE HA COMPETENZA NOMINALE, AGGIUNGI LA COMPETENZA
     if(proficiency) {
-      result =this.el.proficiencyBonus +scoreBonus
+      result =this.characterElem.proficiencyBonus +scoreBonus
     }else{
       result =scoreBonus
     }

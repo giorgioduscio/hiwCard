@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './privileges.component.css'
 })
 export class PrivilegesComponent {
-  @Input() el:any
+  @Input() characterElem:any
 }

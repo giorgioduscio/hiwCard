@@ -1,38 +1,38 @@
 <div class="characterCard">
-    <h3>{{el.generality[0].field}}</h3>
+    <h3>{{characterElem.generality[0].field}}</h3>
     <details>
         <summary>Generalità</summary>
-        <app-generality [el]="el"></app-generality>
+        <app-generality [characterElem]="characterElem"></app-generality>
     </details>
 
     <details>
         <summary>Punteggi</summary>
-        <app-score [el]="el"></app-score>
+        <app-score [characterElem]="characterElem"></app-score>
     </details>
     <details>
         <summary>Competenze</summary>
-        <app-proficiency [el]="el"></app-proficiency>
+        <app-proficiency [characterElem]="characterElem"></app-proficiency>
     </details>
 
     <details>
         <summary>Azione</summary>
-        <app-action [el]="el"></app-action>
+        <app-action [characterElem]="characterElem"></app-action>
     </details>
     <details>
         <summary>Armi e incantesimi</summary>
-        <app-weapons [el]="el"></app-weapons>
+        <app-weapons [characterElem]="characterElem"></app-weapons>
     </details>
     <details>
         <summary>Equipaggiamento</summary>
-        <app-equipment [el]="el"></app-equipment>
+        <app-equipment [characterElem]="characterElem"></app-equipment>
     </details>
 
     <details>
         <summary>Caratteristiche</summary>
-        <app-mettle [el]="el"></app-mettle>
+        <app-mettle [characterElem]="characterElem"></app-mettle>
     </details>
     <details>
         <summary>Privilegi</summary>
-        <app-privileges [el]="el"></app-privileges>
+        <app-privileges [characterElem]="characterElem"></app-privileges>
     </details>
 </div>

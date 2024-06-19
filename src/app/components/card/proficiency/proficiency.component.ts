@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './proficiency.component.css'
 })
 export class ProficiencyComponent {
-  @Input() el:any
+  @Input() characterElem:any
 }
