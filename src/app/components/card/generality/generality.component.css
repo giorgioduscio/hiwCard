@@ -1,8 +1,5 @@
-*{
-    box-sizing: border-box;
-}
-
 .generalityComponent{
+    padding: 10px;
     gap: 5px;
     display: grid;
     grid-template-columns: auto auto;
