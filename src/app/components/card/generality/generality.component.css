@@ -3,11 +3,9 @@
 }
 
 .generalityComponent{
-    gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
     .generalityComponent>div{
         min-width: 100px;

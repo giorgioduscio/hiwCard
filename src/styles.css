@@ -40,24 +40,13 @@ html, body{
         background: var(--c2);
         transform: rotate(-2deg);
     }
-article{
-    overflow: hidden;
-    border-radius: 10px;
-
     
-    box-shadow: 0 0 20px 0 black;
-}
-    article .title{
-        padding: 10px;
-
-        background: var(--c4);
-        text-align: center;
-    }
 
 h1{ font-size: 6vh; }
 h2{ font-size: 5vh; }
-h3{ font-size: 4vh; }
+h3, summary{ font-size: 4vh; }
 h4{ font-size: 3vh; }
+
 
 
 input, textarea{

@@ -33,7 +33,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 
-export class CardComponent implements OnInit, OnDestroy{
+export class CardComponent implements OnInit{
   id: number =0;
   private sub: any;
   el:any
@@ -47,7 +47,4 @@ export class CardComponent implements OnInit, OnDestroy{
     })
     this.el =this.characters[this.id]
   }
-  ngOnDestroy(): void {
-  }
-
 }

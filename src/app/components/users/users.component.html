@@ -1,14 +1,18 @@
 <div class="users">
-    <aside>
-    @for (character of characters; track $index) {
-            <a 
-                [routerLink]="['/users', character.id]" 
-                routerLinkActive="router-link-active" 
-            >
-                {{ character.generality[0].field }}
-            </a>
-    }
-    </aside>
+    <details>
+        <summary> Personaggi </summary>
+        
+        <aside>
+        @for (character of characters; track $index) {
+                <a 
+                    [routerLink]="['/users', character.id]" 
+                    routerLinkActive="router-link-active" 
+                >
+                    {{ character.generality[0].field }}
+                </a>
+        }
+        </aside>
+    </details>
     <article>
         <router-outlet />
     </article>

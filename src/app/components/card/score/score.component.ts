@@ -9,8 +9,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ScoreComponent {
   @Input() el:any
-  showScoreComponent:boolean =true
-
   // CHECK ABILITAà IN TEMPO REALE
   setCheck(e:any, scoreIndex:number, abilityIndex:number){
     this.el.characterScores[scoreIndex].abilities[abilityIndex].proficiency 

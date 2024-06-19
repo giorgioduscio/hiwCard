@@ -1,38 +1,26 @@
 .characterCard{
-    max-width: 1000px;
-    padding: 10px;
-    padding-bottom: 100px;
-    margin: 50px auto;
-
-    display: block;
-    box-shadow: 0 0 20px 5px black;
+    padding: 5px;
 }
+    .characterCard>h3{
+        padding: 10px 0;
 
-    /* TODO HEADER */
-header{
-    margin-bottom: 30px;
-    
-    border-radius: 20px; 
-}
-    header>h1{
-        padding: 20px 0 30px;
         text-align: center;
     }
+    details{
+        margin-bottom: 5px;
+        background: var(--c2);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 20px 0 black;
+    }    
 
-
-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-    .column{
-        width: 300px;
-
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+        summary{
+            padding: 10px;
+            background: var(--c4);
+        }
+        details>*:last-child{
+            padding: 10px;
+        }
 
  
 

@@ -1,30 +1,38 @@
 <div class="characterCard">
-    <header>
-        <h1>Scheda personaggio</h1>
+    <h3>{{el.generality[0].field}}</h3>
+    <details>
+        <summary>Generalità</summary>
         <app-generality [el]="el"></app-generality>
-    </header>
+    </details>
 
+    <details>
+        <summary>Punteggi</summary>
+        <app-score [el]="el"></app-score>
+    </details>
+    <details>
+        <summary>Competenze</summary>
+        <app-proficiency [el]="el"></app-proficiency>
+    </details>
 
-    <section>
-        <div class="column">
-            <app-score [el]="el"></app-score>
-            
-            <app-proficiency [el]="el"></app-proficiency>
-        </div>
+    <details>
+        <summary>Azione</summary>
+        <app-action [el]="el"></app-action>
+    </details>
+    <details>
+        <summary>Armi e incantesimi</summary>
+        <app-weapons [el]="el"></app-weapons>
+    </details>
+    <details>
+        <summary>Equipaggiamento</summary>
+        <app-equipment [el]="el"></app-equipment>
+    </details>
 
-        <div class="column">
-            <app-action [el]="el"></app-action>
-            
-            <app-weapons [el]="el"></app-weapons>
-
-            <app-equipment [el]="el"></app-equipment>
-        </div>
-
-        <div class="column">
-            <app-mettle [el]="el"></app-mettle>
-            
-            <app-privileges [el]="el"></app-privileges>
-        </div>
-    </section>
-
+    <details>
+        <summary>Caratteristiche</summary>
+        <app-mettle [el]="el"></app-mettle>
+    </details>
+    <details>
+        <summary>Privilegi</summary>
+        <app-privileges [el]="el"></app-privileges>
+    </details>
 </div>

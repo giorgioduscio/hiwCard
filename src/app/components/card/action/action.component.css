@@ -1,28 +1,21 @@
-.actionComponent>h3{
-    padding-top: 10px;
-    text-align: center;
-}
-
-.actionComponent>.flexbox{
+.actionComponent{
     padding: 10px 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
 }
-    .flexbox>div{ 
+    .actionComponent>div{ 
+        padding: 5px;
 
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-        
+        background: var(--c4);
+        border-radius: 10px;
         text-align: center;
-
     }
     input{
         width: 25%;
+
         background: transparent;
         border: 0;
-        color: var(--c4);
+        color: var(--c1);
         text-align: center;
     }

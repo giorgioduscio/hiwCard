@@ -1,8 +1,5 @@
-<article class="proficiencyComponent">
-    <h4 class="title">Competenze</h4>
-    <ul>
-        @for (proficiency of el.proficiencys; track $index) {
-            <li>{{ proficiency }}</li>
-        }
-    </ul>
-</article>
+<ul class="proficiencyComponent">
+    @for (proficiency of el.proficiencys; track $index) {
+        <li>{{ proficiency }}</li>
+    }
+</ul>
