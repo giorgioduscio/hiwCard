@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, RouterLink } from '@angular/router';
-import { FieldsService } from '../../../services/fields.service';
+import { FieldsService } from '../../services/fields.service';
+import { GeneralComponent } from './general/general.component';
 
 @Component({
   selector: 'app-badge',
   standalone: true,
   imports: [
     RouterLink,
+
+    GeneralComponent,
   ],
   templateUrl: './badge.component.html',
   styleUrl: './badge.component.css'
@@ -14,7 +17,6 @@ import { FieldsService } from '../../../services/fields.service';
 export class BadgeComponent implements OnInit{
   id!: number;
   character:any
-  background: any;
 
   constructor(private route: ActivatedRoute, private field: FieldsService){}
 
@@ -24,7 +26,8 @@ export class BadgeComponent implements OnInit{
       this.id = +p.get('id')!
       this.character =this.field.characters[this.id]
 
-      this.background ={'backgroundImage': `url(${ this.character.imageURL })`}
     })
+    console.log("chara", this.character);
+    
   }
 }

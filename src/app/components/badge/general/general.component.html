@@ -1,0 +1,16 @@
+<div class="cut" [style]="background">
+    <div class="gridbox">
+    @for (generality of character.generality; track $index) {
+        <div>
+            <p>{{ generality.title }}</p>
+            <h5>{{ generality.field }}</h5>
+        </div>
+    }
+        <div>
+            <p>Peso trasportabile</p>
+            <h5>{{ 
+                ((character.characterScores[0].bonus *2) +10) *7.5
+            }}kg</h5> 
+        </div>
+    </div>
+</div>

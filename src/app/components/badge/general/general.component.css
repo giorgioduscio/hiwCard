@@ -1,0 +1,22 @@
+.cut{
+    margin: 10px 0;
+    overflow: hidden;
+
+    background-position: top  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 5px;
+}
+    .gridbox{
+        height: 100%;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background: var(--st);
+    }
+        .gridbox div{
+            padding: 10px;
+
+            text-align: center;
+        }

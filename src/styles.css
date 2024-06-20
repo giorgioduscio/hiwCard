@@ -24,28 +24,13 @@ html, body{
     font-family: cursive;
     outline: 0;
 }
-
-.postHeader{
-    height: 100px;
-    overflow: hidden;
-    position: relative;
-}
-    .postHeader::after{
-        width: 100%;
-        height: 100%;
-        position: absolute; top: -30px;
-
-        box-shadow: 0 5px 20px 10px var(--c1);
-        content: '';
-        background: var(--c2);
-        transform: rotate(-2deg);
-    }
     
 
 h1{ font-size: 6vh; }
 h2{ font-size: 5vh; }
 h3, summary{ font-size: 4vh; }
 h4{ font-size: 3vh; }
+h5{ font-size: 2.5vh; }
 
 
 

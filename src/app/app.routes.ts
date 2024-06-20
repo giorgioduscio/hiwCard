@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { CardComponent } from './components/card/card.component';
 import { UsersComponent } from './components/users/users.component';
-import { BadgeComponent } from './components/users/badge/badge.component';
+import { BadgeComponent } from './components/badge/badge.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FormComponent } from './components/form/form.component';
 

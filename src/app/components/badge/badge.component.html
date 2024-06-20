@@ -1,0 +1,15 @@
+<div class="badgeComponent">
+    <h3 style="text-align: center;">{{ character.generality[0].field }}</h3>
+
+    <app-general [character]="character"></app-general>
+
+
+
+    <ul> @for (mettle of character.mettle; track $index) {
+        <li>{{ mettle }}</li>
+    }</ul>
+
+    <a [routerLink]="['/card', character.id]">
+        Guarda scheda
+    </a>
+</div>
