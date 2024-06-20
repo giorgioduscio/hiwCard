@@ -20,10 +20,9 @@ export class BadgeComponent implements OnInit{
 
   ngOnInit(): void {
     // PRENDE L'ID DALLA BARRA DEL BROWSER  
-
     this.route.paramMap.subscribe((p: ParamMap)=>{
       this.id = +p.get('id')!
-      this.character =this.field.getCharacters()[this.id]
+      this.character =this.field.characters[this.id]
 
       this.background ={'backgroundImage': `url(${ this.character.imageURL })`}
     })

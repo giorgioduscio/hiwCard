@@ -1,29 +1,19 @@
+.users>nav{
+    width: 100%;
+    padding: 5px 10px;
+    position: fixed; bottom: 0;
 
-.users{
-    padding: 10px;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+
+    box-shadow: 0 0 20px 0 black;
 }
-    details{
-        overflow: hidden;
-        background: var(--c2);
-        border-radius: 10px;
-    }
-        summary{
-            padding: 5px 10px;
-            font-size: 3vh;
-            background: var(--c3);
-        }
-        aside{
-            min-width: 30vh;
-            padding: 10px;   
-
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-            .users>aside>*{
-                padding: 10px;
-                min-width: 100px;
-
-                background: var(--c2);
-                border-radius: 10px;
-            }
+a{
+    width: max-content;
+    padding: 5px;
+    
+    text-align: center;
+    background: var(--c2);
+    border-radius: 10px;
+}
