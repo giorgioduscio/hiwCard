@@ -6,11 +6,12 @@
     <details> <summary>Punteggi</summary>
         <app-scores [character]="character"></app-scores>
     </details>
+    
+    <details> <summary>Azione</summary>
+        <app-action [character]="character"></app-action>
+    </details>
 
 
-    <ul> @for (mettle of character.mettle; track $index) {
-        <li>{{ mettle }}</li>
-    }</ul>
 
     <a [routerLink]="['/card', character.id]">
         Guarda scheda

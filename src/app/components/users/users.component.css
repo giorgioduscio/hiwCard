@@ -8,6 +8,7 @@
     overflow-x: scroll;
 
     box-shadow: 0 0 20px 0 black;
+    background: var(--c3);
 }
 a{
     width: max-content;

@@ -1,0 +1,34 @@
+.gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+    text-align: center;
+}
+    .gridbox>*{
+        padding: 5px;
+        background: var(--c3);
+        border-radius: 10px;
+        }
+        p.flex{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        textarea{
+            width: 30px;
+            height: 20px;
+
+            text-align: center;
+            border: 0;
+        }
+    
+    /* punti ferita */
+    td{
+        padding: 0 5px;
+    }
+        input{ 
+            padding: 0 5px;
+            width: 100%;
+            border: 0;
+        }

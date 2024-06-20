@@ -3,6 +3,7 @@ import { ActivatedRoute, ParamMap, RouterLink } from '@angular/router';
 import { FieldsService } from '../../services/fields.service';
 import { GeneralComponent } from './general/general.component';
 import { ScoresComponent } from './scores/scores.component';
+import { ActionComponent } from './action/action.component';
 
 @Component({
   selector: 'app-badge',
@@ -12,6 +13,7 @@ import { ScoresComponent } from './scores/scores.component';
 
     GeneralComponent,
     ScoresComponent,
+    ActionComponent,
   ],
   templateUrl: './badge.component.html',
   styleUrl: './badge.component.css'
