@@ -15,7 +15,7 @@ export class GeneralComponent implements  OnChanges{
 
   ngOnChanges(changes: SimpleChanges): void {
     this.background ={'backgroundImage': `url(${ this.character.imageURL })`}
-    console.log('this.background', this.background);
+    // console.log('this.background', this.background);
   }  
 
 }

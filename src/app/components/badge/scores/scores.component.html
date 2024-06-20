@@ -1,0 +1,28 @@
+<div class="proficiencyBonus">
+    Bonus competenza:
+    <strong>+{{ character.proficiencyBonus }}</strong>
+</div>
+
+<div class="gridbox">
+    <div *ngFor="let score of character.characterScores; index as a">
+        <div class="score">
+            <div class="title">{{score.title}}</div>
+            <strong class="bonus">{{score.bonus>=0? '+'+score.bonus :score.bonus}}</strong>
+        </div>
+
+        <div class="abilities">
+            <div class="ability" *ngFor="let ability of score.abilities; index as b">
+                <input 
+                    type="checkbox" 
+                    [id]="ability.title"
+                    [checked]="ability.proficiency"
+                    (click)="checkChange($event, a, b)"
+                >
+                <label [for]="ability.title" class="bonus">
+                    {{  abilityBonus(score.bonus, ability.proficiency)  }}
+                    {{  ability.title  }}
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

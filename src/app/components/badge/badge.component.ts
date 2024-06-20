@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap, RouterLink } from '@angular/router';
 import { FieldsService } from '../../services/fields.service';
 import { GeneralComponent } from './general/general.component';
+import { ScoresComponent } from './scores/scores.component';
 
 @Component({
   selector: 'app-badge',
@@ -10,6 +11,7 @@ import { GeneralComponent } from './general/general.component';
     RouterLink,
 
     GeneralComponent,
+    ScoresComponent,
   ],
   templateUrl: './badge.component.html',
   styleUrl: './badge.component.css'
@@ -25,9 +27,7 @@ export class BadgeComponent implements OnInit{
     this.route.paramMap.subscribe((p: ParamMap)=>{
       this.id = +p.get('id')!
       this.character =this.field.characters[this.id]
-
     })
     console.log("chara", this.character);
-    
   }
 }

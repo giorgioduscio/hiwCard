@@ -1,0 +1,31 @@
+.proficiencyBonus{
+    width: max-content;
+    margin: 20px  auto;
+    padding: 10px;
+
+    background: var(--c3);
+    border-radius: 10px;
+}
+
+.gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.gridbox>*{
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--c2);
+}
+/* SCORE */
+.score{
+    padding: 5px;
+
+    text-align: center;
+    background: var(--c3);
+}
+
+/* abilities */
+.abilities{
+    padding: 5px;
+}

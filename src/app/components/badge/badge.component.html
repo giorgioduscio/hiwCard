@@ -3,6 +3,9 @@
 
     <app-general [character]="character"></app-general>
 
+    <details> <summary>Punteggi</summary>
+        <app-scores [character]="character"></app-scores>
+    </details>
 
 
     <ul> @for (mettle of character.mettle; track $index) {
