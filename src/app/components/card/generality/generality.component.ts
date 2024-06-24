@@ -11,6 +11,6 @@ export class GeneralityComponent implements OnInit {
   @Input() characterElem:any  
   
   ngOnInit(): void {
-    console.log("data", this.characterElem.generality);
+    // console.log("data", this.characterElem.generality);
   }
 }
