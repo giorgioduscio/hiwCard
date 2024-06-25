@@ -1,4 +1,6 @@
 import { Routes } from '@angular/router';
+import { AuthGuard } from './auth/auth.guard';
+
 import { CardComponent } from './components/card/card.component';
 import { UsersComponent } from './components/users/users.component';
 import { BadgeComponent } from './components/badge/badge.component';
@@ -7,7 +9,8 @@ import { FormComponent } from './components/form/form.component';
 
 export const routes: Routes =[
     {path: "", redirectTo: "users/0", pathMatch: 'full'},
-    {path: "card/:ID", component: CardComponent},
+
+    {path: "card/:ID", component: CardComponent, canActivate: [AuthGuard]},
     {path: "users", component: UsersComponent, children:[
         {path:":id", component: BadgeComponent},
     ]},
