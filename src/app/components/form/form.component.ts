@@ -3,11 +3,13 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { FirebaseService } from '../../services/firebase.service';
 
 import { FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-form',
   standalone: true,
   imports: [
+    NgFor,
     FormsModule,
     ReactiveFormsModule,
   ],

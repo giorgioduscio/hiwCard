@@ -1,49 +1,31 @@
+.formComponent{}
+section.form{
+    padding: 10px;
+    /* box-shadow: 0 0 20px 0 black; */
+}
+
 form{
-    width: 500px;
-    margin:0 auto 50px;
-    padding: 30px;
-
-    box-shadow: 0 0 20px 5px black;
+    box-sizing: border-box;
 }
-form>.flexbox{
+    .gridbox{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5px;
+        align-items: center;
+        justify-items: start;
+    }
+
+h3{ 
+    padding: 30px 0; 
+    text-align: center;
+}
+input{
     padding: 10px;
-
-    display: grid;
-    align-items: center;
-    justify-items: stretch;
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
 }
-
-input, button{
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-button.switch{
-    margin: 20px auto;
-}
-
-
-
-.database{
-    width: min-content;
-    margin: 0 auto 50px;
-    padding: 30px;
-    box-shadow: 0 0 20px 0 black;
-}
-table input{
-    border-collapse: collapse;
-    border-radius: 0;
-}
-input:focus{
-    background: var(--c3);
-}
-
-table button{
-    padding: 10px;
-    border-radius: 0;
+button{
     box-shadow: none;
-}
-table button:active{
-    background: var(--c3);
+    border-radius: 5px;
 }
