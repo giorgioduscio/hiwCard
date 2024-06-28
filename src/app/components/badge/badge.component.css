@@ -1,7 +1,14 @@
 .badgeComponent{
     padding: 10px;
     padding-bottom: 100px;
-    
-    border-radius: 10px;
 }
+.container{
+    padding: 10px;
+    background: var(--st);
+    border-radius: 10px;
+
+}
+    summary{
+        border-bottom: 2px solid var(--st);
+    }
 

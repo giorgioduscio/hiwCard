@@ -125,7 +125,7 @@ export class FieldsService {
         {title: "Altezza", field: 1.80},
         {title: "Peso", field: 70},
       ],
-      imageURL: "https://i.pinimg.com/736x/5a/06/89/5a068970bd13910105e3a0150e11e668.jpg",
+      imageURL: "https://movieplayer.net-cdn.it/t/images/2022/10/20/johnny-depp-jack-sparrow_jpg_1600x900_crop_q85.jpg",
       transportCapacity(){ 
         //punteggio *7.5
         let result =((this.characterScores[0].bonus *2) +10) *7.5

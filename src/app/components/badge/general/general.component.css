@@ -1,22 +1,19 @@
-.cut{
-    margin: 10px 0;
+.gereralComponent{
+    margin-bottom: 10px;
     overflow: hidden;
-
-    background-position: top  center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    border-radius: 5px;
+    border-radius: 10px;
 }
-    .gridbox{
-        height: 100%;
-        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        background: var(--st);
+figure{}
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
     }
-        .gridbox div{
-            padding: 10px;
-
-            text-align: center;
-        }
+.gridbox{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    background: var(--c2);
+}

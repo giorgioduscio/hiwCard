@@ -1,6 +1,6 @@
 .proficiencyBonus{
     width: max-content;
-    margin: 20px  auto;
+    margin: 10px  auto;
     padding: 10px;
 
     background: var(--c3);
@@ -9,23 +9,35 @@
 
 .gridbox{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     gap: 5px;
 }
-.gridbox>*{
-    overflow: hidden;
-    border-radius: 10px;
-    background: var(--c2);
-}
+    .gridbox>*{
+        overflow: hidden;
+        border-radius: 10px;
+        /* border: 1px solid; */
+    }
+
+
 /* SCORE */
 .score{
-    padding: 5px;
-
+    margin: auto;
+    width: 100px;
+    overflow: hidden;
     text-align: center;
-    background: var(--c3);
+    border-radius: 10px;
 }
+    .score .title{
+        padding: 10px 0;
+        background: var(--c3);
+    }
+    .score .bonus{
+        margin-top: 5px;
+        font-size: 30px;
+        background: var(--c3); 
+    }
 
 /* abilities */
 .abilities{
-    padding: 5px;
+    padding: 10px 0;
 }

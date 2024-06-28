@@ -1,9 +1,10 @@
+import { NgFor } from '@angular/common';
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-general',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './general.component.html',
   styleUrl: './general.component.css'
 })

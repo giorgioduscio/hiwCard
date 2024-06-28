@@ -1,6 +1,6 @@
 .gridbox{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 5px;
 
     text-align: center;
@@ -9,7 +9,7 @@
         padding: 5px;
         background: var(--c3);
         border-radius: 10px;
-        }
+    }
         p.flex{
             display: flex;
             justify-content: center;
@@ -22,8 +22,15 @@
             text-align: center;
             border: 0;
         }
+        select{
+            width: 50%;
+            margin: 5px;
+        }
     
-    /* punti ferita */
+/* punti ferita */
+.hitPoint{
+    padding: 20px 0;
+}
     td{
         padding: 0 5px;
     }
@@ -32,3 +39,4 @@
             width: 100%;
             border: 0;
         }
+        .hp{ text-align: center; }

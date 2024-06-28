@@ -7,7 +7,7 @@
     <div *ngFor="let score of character.characterScores; index as a">
         <div class="score">
             <div class="title">{{score.title}}</div>
-            <strong class="bonus">{{score.bonus>=0? '+'+score.bonus :score.bonus}}</strong>
+            <div class="bonus">{{score.bonus>=0? '+'+score.bonus :score.bonus}}</div>
         </div>
 
         <div class="abilities">

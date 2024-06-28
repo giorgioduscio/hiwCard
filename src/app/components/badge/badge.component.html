@@ -1,15 +1,15 @@
 <div class="badgeComponent">
-    <h3 style="text-align: center;">{{ character.generality[0].field }}</h3>
-
     <app-general [character]="character"></app-general>
 
-    <details> <summary>Punteggi</summary>
-        <app-scores [character]="character"></app-scores>
-    </details>
-    
-    <details> <summary>Azione</summary>
-        <app-action [character]="character"></app-action>
-    </details>
+    <div class="container">
+        <details open> <summary>Punteggi</summary>
+            <app-scores [character]="character"></app-scores>
+        </details>
+        
+        <details open> <summary>Azione</summary>
+            <app-action [character]="character"></app-action>
+        </details>
+    </div>
 
 
 

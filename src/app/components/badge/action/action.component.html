@@ -1,7 +1,7 @@
-<div class="action">
+<div class="actionComponent">
     <div class="gridbox">
         <div> 
-            <div>Classe armatura</div>
+            <p>Classe armatura</p>
             <select name="ca" id="ca" [value]="selectValue" (change)="selectChange($event)">
                 <option value="less">Senza armatura</option>
                 <option value="monk">Monaco</option>
@@ -10,33 +10,36 @@
                 <option value="inter">Cotta di maglia</option>
                 <option value="heavy">Armatura di piastre</option>
             </select>
-
             <strong>{{ outputCA }}🛡</strong>
         </div>
         <div>
-            <div>Velocità</div>
+            <p>Velocità</p>
             <p class="flex"> <textarea>{{ character.speed }}</textarea>m </p>
         </div>
         <div>
-            <div>Dado vita</div>
+            <p>Dado vita</p>
             <p class="flex"> d<textarea>{{ character.lifeDice }}</textarea> </p>
         </div>
     </div>
 
-    <div>
+
+    <div class="hitPoint">
         <h4 style="text-align: center;">Punti ferita</h4>
-        <table><tbody>
-            <tr>
-                <td>Massimi</td>
-                <td>Attuali</td>
-                <td>Danni subiti</td>
-            </tr>
-            <tr>
-                <td>{{ hp() }}hp</td>
-                <td><input type="number" [value]="hp() -damage"></td>
-                <td><input type="number" [value]="damage" (change)="setDamage($event)"></td>
-            </tr>
-        </tbody></table>
-        <strong></strong>
+        <table>
+            <thead>
+                <tr>
+                    <th>Massimi</th>
+                    <th>Attuali</th>
+                    <th>Danni subiti</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="hp">{{ hp() }}hp</td>
+                    <td><input type="number" [value]="hp() -damage"></td>
+                    <td><input type="number" [value]="damage" (change)="setDamage($event)"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

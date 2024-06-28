@@ -1,11 +1,17 @@
-<div class="cut" [style]="background">
+<div class="gereralComponent">
+    <figure>
+        <abbr [title]="character.generality[0].field">
+            <img [src]="character.imageURL">
+        </abbr> 
+        <figcaption>{{ character.generality[0].field }}</figcaption>
+    </figure>
+
     <div class="gridbox">
-    @for (generality of character.generality; track $index) {
-        <div>
+        <div *ngFor="let generality of character.generality">
             <p>{{ generality.title }}</p>
             <h5>{{ generality.field }}</h5>
         </div>
-    }
+    
         <div>
             <p>Peso trasportabile</p>
             <h5>{{ 
